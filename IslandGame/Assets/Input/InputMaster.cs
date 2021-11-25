@@ -27,10 +27,26 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
+                    ""name"": ""PrimaryFingerDelta"",
+                    ""type"": ""Value"",
+                    ""id"": ""d9ee520e-cadf-4b0b-a3be-46862dd2dbd0"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
                     ""name"": ""SecondaryFingerPosition"",
                     ""type"": ""Value"",
                     ""id"": ""0206dd46-90ec-405f-9ce3-8d3967355eba"",
                     ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""PrimaryFingerContact"",
+                    ""type"": ""Button"",
+                    ""id"": ""1d828198-71bc-4c3e-a78e-c9fae94cbdd7"",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -95,6 +111,50 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""MouseScroll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1aa67081-6bcd-45ce-a5ee-0d4eb4433145"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""PrimaryFingerDelta"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""21f17acb-e49f-446c-8d04-71087797f782"",
+                    ""path"": ""<Touchscreen>/touch0/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""TouchScreen"",
+                    ""action"": ""PrimaryFingerDelta"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d6d12b98-5a17-4e8f-b451-b53aae62046a"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""PrimaryFingerContact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0983abf7-0c89-41f2-88f6-b0d76c543528"",
+                    ""path"": ""<Touchscreen>/touch0/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""TouchScreen"",
+                    ""action"": ""PrimaryFingerContact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -132,7 +192,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
         m_Camera_PrimaryFingerPosition = m_Camera.FindAction("PrimaryFingerPosition", throwIfNotFound: true);
+        m_Camera_PrimaryFingerDelta = m_Camera.FindAction("PrimaryFingerDelta", throwIfNotFound: true);
         m_Camera_SecondaryFingerPosition = m_Camera.FindAction("SecondaryFingerPosition", throwIfNotFound: true);
+        m_Camera_PrimaryFingerContact = m_Camera.FindAction("PrimaryFingerContact", throwIfNotFound: true);
         m_Camera_SecondaryTouchContact = m_Camera.FindAction("SecondaryTouchContact", throwIfNotFound: true);
         m_Camera_MouseScroll = m_Camera.FindAction("MouseScroll", throwIfNotFound: true);
     }
@@ -185,7 +247,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Camera;
     private ICameraActions m_CameraActionsCallbackInterface;
     private readonly InputAction m_Camera_PrimaryFingerPosition;
+    private readonly InputAction m_Camera_PrimaryFingerDelta;
     private readonly InputAction m_Camera_SecondaryFingerPosition;
+    private readonly InputAction m_Camera_PrimaryFingerContact;
     private readonly InputAction m_Camera_SecondaryTouchContact;
     private readonly InputAction m_Camera_MouseScroll;
     public struct CameraActions
@@ -193,7 +257,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
         private @InputMaster m_Wrapper;
         public CameraActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @PrimaryFingerPosition => m_Wrapper.m_Camera_PrimaryFingerPosition;
+        public InputAction @PrimaryFingerDelta => m_Wrapper.m_Camera_PrimaryFingerDelta;
         public InputAction @SecondaryFingerPosition => m_Wrapper.m_Camera_SecondaryFingerPosition;
+        public InputAction @PrimaryFingerContact => m_Wrapper.m_Camera_PrimaryFingerContact;
         public InputAction @SecondaryTouchContact => m_Wrapper.m_Camera_SecondaryTouchContact;
         public InputAction @MouseScroll => m_Wrapper.m_Camera_MouseScroll;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
@@ -208,9 +274,15 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @PrimaryFingerPosition.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerPosition;
                 @PrimaryFingerPosition.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerPosition;
                 @PrimaryFingerPosition.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerPosition;
+                @PrimaryFingerDelta.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerDelta;
+                @PrimaryFingerDelta.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerDelta;
+                @PrimaryFingerDelta.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerDelta;
                 @SecondaryFingerPosition.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerPosition;
                 @SecondaryFingerPosition.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerPosition;
                 @SecondaryFingerPosition.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerPosition;
+                @PrimaryFingerContact.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerContact;
+                @PrimaryFingerContact.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerContact;
+                @PrimaryFingerContact.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerContact;
                 @SecondaryTouchContact.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryTouchContact;
                 @SecondaryTouchContact.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryTouchContact;
                 @SecondaryTouchContact.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryTouchContact;
@@ -224,9 +296,15 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @PrimaryFingerPosition.started += instance.OnPrimaryFingerPosition;
                 @PrimaryFingerPosition.performed += instance.OnPrimaryFingerPosition;
                 @PrimaryFingerPosition.canceled += instance.OnPrimaryFingerPosition;
+                @PrimaryFingerDelta.started += instance.OnPrimaryFingerDelta;
+                @PrimaryFingerDelta.performed += instance.OnPrimaryFingerDelta;
+                @PrimaryFingerDelta.canceled += instance.OnPrimaryFingerDelta;
                 @SecondaryFingerPosition.started += instance.OnSecondaryFingerPosition;
                 @SecondaryFingerPosition.performed += instance.OnSecondaryFingerPosition;
                 @SecondaryFingerPosition.canceled += instance.OnSecondaryFingerPosition;
+                @PrimaryFingerContact.started += instance.OnPrimaryFingerContact;
+                @PrimaryFingerContact.performed += instance.OnPrimaryFingerContact;
+                @PrimaryFingerContact.canceled += instance.OnPrimaryFingerContact;
                 @SecondaryTouchContact.started += instance.OnSecondaryTouchContact;
                 @SecondaryTouchContact.performed += instance.OnSecondaryTouchContact;
                 @SecondaryTouchContact.canceled += instance.OnSecondaryTouchContact;
@@ -258,7 +336,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
     public interface ICameraActions
     {
         void OnPrimaryFingerPosition(InputAction.CallbackContext context);
+        void OnPrimaryFingerDelta(InputAction.CallbackContext context);
         void OnSecondaryFingerPosition(InputAction.CallbackContext context);
+        void OnPrimaryFingerContact(InputAction.CallbackContext context);
         void OnSecondaryTouchContact(InputAction.CallbackContext context);
         void OnMouseScroll(InputAction.CallbackContext context);
     }

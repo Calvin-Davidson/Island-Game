@@ -21,13 +21,11 @@ public class PinchDetection : MonoBehaviour
     
     public void ZoomStart()
     {
-        GameObject.FindGameObjectWithTag("DebugCube").GetComponent<MeshRenderer>().material.color = Color.green;
         _zoomDetectionCoroutine = StartCoroutine(ZoomDetection());
     }
 
     public void ZoomEnd()
     {
-        GameObject.FindGameObjectWithTag("DebugCube").GetComponent<MeshRenderer>().material.color = Color.red;
         StopCoroutine(_zoomDetectionCoroutine);
     }
 

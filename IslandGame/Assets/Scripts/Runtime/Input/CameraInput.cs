@@ -7,11 +7,14 @@ public class CameraInput : MonoBehaviour
 {
     [SerializeField] private InputBrain brain;
     [SerializeField] private CameraZoom cameraZoom;
-    
+    [SerializeField] private CameraRotation cameraRotation;
+
+    private bool _isPrimaryHolding = false;
     private void Awake()
     {
         InstantiatePinchDetection();
         InstantiateMouseScrollDetection();
+        InstantiateRotationDetection();
     }
 
     private void InstantiatePinchDetection()
@@ -29,7 +32,6 @@ public class CameraInput : MonoBehaviour
         pinchDetection.onPinch += cameraZoom.ZoomOut;
         pinchDetection.onStretch += cameraZoom.ZoomIn;
     }
-
     private void InstantiateMouseScrollDetection()
     {
         brain.InputActionAsset["MouseScroll"].performed += context =>
@@ -44,4 +46,27 @@ public class CameraInput : MonoBehaviour
             }
         };
     }
+
+    private void InstantiateRotationDetection()
+    {
+        brain.InputActionAsset["PrimaryFingerContact"].started += _ => _isPrimaryHolding = true;
+        brain.InputActionAsset["PrimaryFingerContact"].canceled += _ => _isPrimaryHolding = false;
+        
+        brain.InputActionAsset["PrimaryFingerDelta"].performed += context =>
+        {
+            if (!_isPrimaryHolding) return;
+           
+            Vector2 direction = context.ReadValue<Vector2>();
+
+            if (direction.x > 0)
+            {
+                cameraRotation.RotateToRight();
+            }
+            else if (direction.x < 0)
+            {
+                cameraRotation.RotateToLeft();
+            }
+        };
+    }
+    
 }

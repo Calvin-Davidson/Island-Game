@@ -14,10 +14,26 @@
                     "interactions": ""
                 },
                 {
+                    "name": "PrimaryFingerDelta",
+                    "type": "Value",
+                    "id": "d9ee520e-cadf-4b0b-a3be-46862dd2dbd0",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "SecondaryFingerPosition",
                     "type": "Value",
                     "id": "0206dd46-90ec-405f-9ce3-8d3967355eba",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "PrimaryFingerContact",
+                    "type": "Button",
+                    "id": "1d828198-71bc-4c3e-a78e-c9fae94cbdd7",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
@@ -80,6 +96,50 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "MouseScroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1aa67081-6bcd-45ce-a5ee-0d4eb4433145",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "PrimaryFingerDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21f17acb-e49f-446c-8d04-71087797f782",
+                    "path": "<Touchscreen>/touch0/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "TouchScreen",
+                    "action": "PrimaryFingerDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6d12b98-5a17-4e8f-b451-b53aae62046a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "PrimaryFingerContact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0983abf7-0c89-41f2-88f6-b0d76c543528",
+                    "path": "<Touchscreen>/touch0/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "TouchScreen",
+                    "action": "PrimaryFingerContact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
