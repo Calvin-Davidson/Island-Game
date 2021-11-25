@@ -6,9 +6,33 @@
             "id": "a3bbabac-748c-43d9-9396-5f3de3a93c75",
             "actions": [
                 {
-                    "name": "Zoom",
+                    "name": "PrimaryFingerPosition",
                     "type": "Value",
                     "id": "f34b4898-43f3-48ce-a9dc-225f98a88b13",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SecondaryFingerPosition",
+                    "type": "Value",
+                    "id": "0206dd46-90ec-405f-9ce3-8d3967355eba",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SecondaryTouchContact",
+                    "type": "Button",
+                    "id": "a577a4ed-3b4e-466b-a157-3821ed19987d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "MouseScroll",
+                    "type": "Value",
+                    "id": "818a49f1-decf-4700-895c-cb65dd43d8e4",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
@@ -17,12 +41,45 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "8c6ede84-d196-4074-9b98-95514459c2b7",
+                    "id": "c87fbb41-7298-4522-b5da-1cc1e9376372",
+                    "path": "<Touchscreen>/touch0/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "TouchScreen",
+                    "action": "PrimaryFingerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5333273d-a836-4e28-a725-2e8b852f53d0",
+                    "path": "<Touchscreen>/touch1/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "TouchScreen",
+                    "action": "SecondaryFingerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ec3e875-2b5d-4867-9ddc-6f91605afa32",
+                    "path": "<Touchscreen>/touch1/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "TouchScreen",
+                    "action": "SecondaryTouchContact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3fb704dd-4594-422a-bc4e-81d37438aefc",
                     "path": "<Mouse>/scroll",
                     "interactions": "",
                     "processors": "",
                     "groups": "KeyboardMouse",
-                    "action": "Zoom",
+                    "action": "MouseScroll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

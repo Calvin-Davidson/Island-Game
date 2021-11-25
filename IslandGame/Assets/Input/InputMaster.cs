@@ -19,9 +19,33 @@ public class @InputMaster : IInputActionCollection, IDisposable
             ""id"": ""a3bbabac-748c-43d9-9396-5f3de3a93c75"",
             ""actions"": [
                 {
-                    ""name"": ""Zoom"",
+                    ""name"": ""PrimaryFingerPosition"",
                     ""type"": ""Value"",
                     ""id"": ""f34b4898-43f3-48ce-a9dc-225f98a88b13"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SecondaryFingerPosition"",
+                    ""type"": ""Value"",
+                    ""id"": ""0206dd46-90ec-405f-9ce3-8d3967355eba"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""SecondaryTouchContact"",
+                    ""type"": ""Button"",
+                    ""id"": ""a577a4ed-3b4e-466b-a157-3821ed19987d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""MouseScroll"",
+                    ""type"": ""Value"",
+                    ""id"": ""818a49f1-decf-4700-895c-cb65dd43d8e4"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -30,12 +54,45 @@ public class @InputMaster : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""8c6ede84-d196-4074-9b98-95514459c2b7"",
+                    ""id"": ""c87fbb41-7298-4522-b5da-1cc1e9376372"",
+                    ""path"": ""<Touchscreen>/touch0/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""TouchScreen"",
+                    ""action"": ""PrimaryFingerPosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5333273d-a836-4e28-a725-2e8b852f53d0"",
+                    ""path"": ""<Touchscreen>/touch1/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""TouchScreen"",
+                    ""action"": ""SecondaryFingerPosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5ec3e875-2b5d-4867-9ddc-6f91605afa32"",
+                    ""path"": ""<Touchscreen>/touch1/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""TouchScreen"",
+                    ""action"": ""SecondaryTouchContact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3fb704dd-4594-422a-bc4e-81d37438aefc"",
                     ""path"": ""<Mouse>/scroll"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""KeyboardMouse"",
-                    ""action"": ""Zoom"",
+                    ""action"": ""MouseScroll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -74,7 +131,10 @@ public class @InputMaster : IInputActionCollection, IDisposable
 }");
         // Camera
         m_Camera = asset.FindActionMap("Camera", throwIfNotFound: true);
-        m_Camera_Zoom = m_Camera.FindAction("Zoom", throwIfNotFound: true);
+        m_Camera_PrimaryFingerPosition = m_Camera.FindAction("PrimaryFingerPosition", throwIfNotFound: true);
+        m_Camera_SecondaryFingerPosition = m_Camera.FindAction("SecondaryFingerPosition", throwIfNotFound: true);
+        m_Camera_SecondaryTouchContact = m_Camera.FindAction("SecondaryTouchContact", throwIfNotFound: true);
+        m_Camera_MouseScroll = m_Camera.FindAction("MouseScroll", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -124,12 +184,18 @@ public class @InputMaster : IInputActionCollection, IDisposable
     // Camera
     private readonly InputActionMap m_Camera;
     private ICameraActions m_CameraActionsCallbackInterface;
-    private readonly InputAction m_Camera_Zoom;
+    private readonly InputAction m_Camera_PrimaryFingerPosition;
+    private readonly InputAction m_Camera_SecondaryFingerPosition;
+    private readonly InputAction m_Camera_SecondaryTouchContact;
+    private readonly InputAction m_Camera_MouseScroll;
     public struct CameraActions
     {
         private @InputMaster m_Wrapper;
         public CameraActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Zoom => m_Wrapper.m_Camera_Zoom;
+        public InputAction @PrimaryFingerPosition => m_Wrapper.m_Camera_PrimaryFingerPosition;
+        public InputAction @SecondaryFingerPosition => m_Wrapper.m_Camera_SecondaryFingerPosition;
+        public InputAction @SecondaryTouchContact => m_Wrapper.m_Camera_SecondaryTouchContact;
+        public InputAction @MouseScroll => m_Wrapper.m_Camera_MouseScroll;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -139,16 +205,34 @@ public class @InputMaster : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_CameraActionsCallbackInterface != null)
             {
-                @Zoom.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
-                @Zoom.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
-                @Zoom.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnZoom;
+                @PrimaryFingerPosition.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerPosition;
+                @PrimaryFingerPosition.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerPosition;
+                @PrimaryFingerPosition.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnPrimaryFingerPosition;
+                @SecondaryFingerPosition.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerPosition;
+                @SecondaryFingerPosition.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerPosition;
+                @SecondaryFingerPosition.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerPosition;
+                @SecondaryTouchContact.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryTouchContact;
+                @SecondaryTouchContact.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryTouchContact;
+                @SecondaryTouchContact.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryTouchContact;
+                @MouseScroll.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnMouseScroll;
+                @MouseScroll.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnMouseScroll;
+                @MouseScroll.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnMouseScroll;
             }
             m_Wrapper.m_CameraActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Zoom.started += instance.OnZoom;
-                @Zoom.performed += instance.OnZoom;
-                @Zoom.canceled += instance.OnZoom;
+                @PrimaryFingerPosition.started += instance.OnPrimaryFingerPosition;
+                @PrimaryFingerPosition.performed += instance.OnPrimaryFingerPosition;
+                @PrimaryFingerPosition.canceled += instance.OnPrimaryFingerPosition;
+                @SecondaryFingerPosition.started += instance.OnSecondaryFingerPosition;
+                @SecondaryFingerPosition.performed += instance.OnSecondaryFingerPosition;
+                @SecondaryFingerPosition.canceled += instance.OnSecondaryFingerPosition;
+                @SecondaryTouchContact.started += instance.OnSecondaryTouchContact;
+                @SecondaryTouchContact.performed += instance.OnSecondaryTouchContact;
+                @SecondaryTouchContact.canceled += instance.OnSecondaryTouchContact;
+                @MouseScroll.started += instance.OnMouseScroll;
+                @MouseScroll.performed += instance.OnMouseScroll;
+                @MouseScroll.canceled += instance.OnMouseScroll;
             }
         }
     }
@@ -173,6 +257,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
     }
     public interface ICameraActions
     {
-        void OnZoom(InputAction.CallbackContext context);
+        void OnPrimaryFingerPosition(InputAction.CallbackContext context);
+        void OnSecondaryFingerPosition(InputAction.CallbackContext context);
+        void OnSecondaryTouchContact(InputAction.CallbackContext context);
+        void OnMouseScroll(InputAction.CallbackContext context);
     }
 }
