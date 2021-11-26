@@ -68,6 +68,17 @@
                 },
                 {
                     "name": "",
+                    "id": "9cd295da-75b1-4125-af78-01764a7c9fd5",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "PrimaryFingerPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5333273d-a836-4e28-a725-2e8b852f53d0",
                     "path": "<Touchscreen>/touch1/position",
                     "interactions": "",

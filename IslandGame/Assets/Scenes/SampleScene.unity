@@ -134,9 +134,10 @@ GameObject:
   - component: {fileID: 1474907}
   - component: {fileID: 1474909}
   - component: {fileID: 1474908}
+  - component: {fileID: 1474910}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -204,6 +205,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1474910
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &2413980
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,9 +230,10 @@ GameObject:
   - component: {fileID: 2413981}
   - component: {fileID: 2413983}
   - component: {fileID: 2413982}
+  - component: {fileID: 2413984}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,6 +301,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2413984
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2413980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &29083890
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,9 +326,10 @@ GameObject:
   - component: {fileID: 29083891}
   - component: {fileID: 29083893}
   - component: {fileID: 29083892}
+  - component: {fileID: 29083894}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -366,6 +397,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &29083894
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29083890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &29306264
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,9 +422,10 @@ GameObject:
   - component: {fileID: 29306265}
   - component: {fileID: 29306267}
   - component: {fileID: 29306266}
+  - component: {fileID: 29306268}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -447,6 +493,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &29306268
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29306264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &34910445
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +518,7 @@ GameObject:
   - component: {fileID: 34910446}
   m_Layer: 0
   m_Name: Pillars (47)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -490,9 +550,10 @@ GameObject:
   - component: {fileID: 36651745}
   - component: {fileID: 36651747}
   - component: {fileID: 36651746}
+  - component: {fileID: 36651748}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,6 +621,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &36651748
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36651744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &45139739
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,9 +646,10 @@ GameObject:
   - component: {fileID: 45139740}
   - component: {fileID: 45139742}
   - component: {fileID: 45139741}
+  - component: {fileID: 45139743}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -641,6 +717,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &45139743
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45139739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &51459690
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,9 +742,10 @@ GameObject:
   - component: {fileID: 51459691}
   - component: {fileID: 51459693}
   - component: {fileID: 51459692}
+  - component: {fileID: 51459694}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -722,6 +813,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &51459694
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51459690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &63555359
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,9 +838,10 @@ GameObject:
   - component: {fileID: 63555360}
   - component: {fileID: 63555362}
   - component: {fileID: 63555361}
+  - component: {fileID: 63555363}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -803,6 +909,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &63555363
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63555359}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &69572070
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +934,7 @@ GameObject:
   - component: {fileID: 69572071}
   m_Layer: 0
   m_Name: Pillars (29)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -846,9 +966,10 @@ GameObject:
   - component: {fileID: 70330938}
   - component: {fileID: 70330940}
   - component: {fileID: 70330939}
+  - component: {fileID: 70330941}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -916,6 +1037,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &70330941
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70330937}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &76571171
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,9 +1062,10 @@ GameObject:
   - component: {fileID: 76571172}
   - component: {fileID: 76571174}
   - component: {fileID: 76571173}
+  - component: {fileID: 76571175}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -997,6 +1133,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &76571175
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76571171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &97414050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,9 +1158,10 @@ GameObject:
   - component: {fileID: 97414051}
   - component: {fileID: 97414053}
   - component: {fileID: 97414052}
+  - component: {fileID: 97414054}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1078,6 +1229,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &97414054
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97414050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &107081804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,9 +1254,10 @@ GameObject:
   - component: {fileID: 107081805}
   - component: {fileID: 107081807}
   - component: {fileID: 107081806}
+  - component: {fileID: 107081808}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1159,6 +1325,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &107081808
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107081804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &108872420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,9 +1350,10 @@ GameObject:
   - component: {fileID: 108872421}
   - component: {fileID: 108872423}
   - component: {fileID: 108872422}
+  - component: {fileID: 108872424}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1240,6 +1421,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &108872424
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108872420}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &116587222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,7 +1446,7 @@ GameObject:
   - component: {fileID: 116587223}
   m_Layer: 0
   m_Name: Pillars (46)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1379,7 +1574,7 @@ GameObject:
   - component: {fileID: 152054111}
   m_Layer: 0
   m_Name: Pillars (13)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1398,7 +1593,7 @@ Transform:
   - {fileID: 1957146369}
   - {fileID: 953804983}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &162425395
 GameObject:
@@ -1411,9 +1606,10 @@ GameObject:
   - component: {fileID: 162425396}
   - component: {fileID: 162425398}
   - component: {fileID: 162425397}
+  - component: {fileID: 162425399}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1481,87 +1677,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &169057890
-GameObject:
+--- !u!64 &162425399
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 169057891}
-  - component: {fileID: 169057893}
-  - component: {fileID: 169057892}
-  m_Layer: 0
-  m_Name: Hexagon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &169057891
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169057890}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1807475367}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &169057892
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169057890}
-  m_Mesh: {fileID: 638742660}
---- !u!23 &169057893
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 169057890}
+  m_GameObject: {fileID: 162425395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 2e464734fd9bf1c4685562b65a7c6c94, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &179352317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1702,7 @@ GameObject:
   - component: {fileID: 179352318}
   m_Layer: 0
   m_Name: Pillars (34)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1605,9 +1734,10 @@ GameObject:
   - component: {fileID: 205709983}
   - component: {fileID: 205709985}
   - component: {fileID: 205709984}
+  - component: {fileID: 205709986}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1675,6 +1805,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &205709986
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205709982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &253979862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1830,7 @@ GameObject:
   - component: {fileID: 253979863}
   m_Layer: 0
   m_Name: Pillars (52)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1718,9 +1862,10 @@ GameObject:
   - component: {fileID: 259800327}
   - component: {fileID: 259800329}
   - component: {fileID: 259800328}
+  - component: {fileID: 259800330}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1788,6 +1933,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &259800330
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259800326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &285672630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,9 +1958,10 @@ GameObject:
   - component: {fileID: 285672631}
   - component: {fileID: 285672633}
   - component: {fileID: 285672632}
+  - component: {fileID: 285672634}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1869,6 +2029,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &285672634
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285672630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &308511441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,7 +2054,7 @@ GameObject:
   - component: {fileID: 308511442}
   m_Layer: 0
   m_Name: Pillars (6)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1899,7 +2073,7 @@ Transform:
   - {fileID: 560473056}
   - {fileID: 827985335}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339377816
 GameObject:
@@ -1912,9 +2086,10 @@ GameObject:
   - component: {fileID: 339377817}
   - component: {fileID: 339377819}
   - component: {fileID: 339377818}
+  - component: {fileID: 339377820}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1982,6 +2157,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &339377820
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339377816}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &369855432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,9 +2182,10 @@ GameObject:
   - component: {fileID: 369855433}
   - component: {fileID: 369855435}
   - component: {fileID: 369855434}
+  - component: {fileID: 369855436}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2063,6 +2253,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &369855436
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369855432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &373982610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,7 +2278,7 @@ GameObject:
   - component: {fileID: 373982611}
   m_Layer: 0
   m_Name: Pillars (60)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2106,9 +2310,10 @@ GameObject:
   - component: {fileID: 404409692}
   - component: {fileID: 404409694}
   - component: {fileID: 404409693}
+  - component: {fileID: 404409695}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2176,6 +2381,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &404409695
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404409691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &429840432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,9 +2406,10 @@ GameObject:
   - component: {fileID: 429840433}
   - component: {fileID: 429840435}
   - component: {fileID: 429840434}
+  - component: {fileID: 429840436}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2257,6 +2477,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &429840436
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429840432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &453308330
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,9 +2502,10 @@ GameObject:
   - component: {fileID: 453308331}
   - component: {fileID: 453308333}
   - component: {fileID: 453308332}
+  - component: {fileID: 453308334}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2338,6 +2573,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &453308334
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453308330}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &460829446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,7 +2598,7 @@ GameObject:
   - component: {fileID: 460829447}
   m_Layer: 0
   m_Name: Pillars (8)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2368,7 +2617,7 @@ Transform:
   - {fileID: 722187918}
   - {fileID: 1523972924}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &476487075
 GameObject:
@@ -2381,9 +2630,10 @@ GameObject:
   - component: {fileID: 476487076}
   - component: {fileID: 476487078}
   - component: {fileID: 476487077}
+  - component: {fileID: 476487079}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2451,6 +2701,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &476487079
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476487075}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &503092395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,9 +2726,10 @@ GameObject:
   - component: {fileID: 503092396}
   - component: {fileID: 503092398}
   - component: {fileID: 503092397}
+  - component: {fileID: 503092399}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2532,6 +2797,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &503092399
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503092395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &514257849
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,9 +2853,10 @@ GameObject:
   - component: {fileID: 542494334}
   - component: {fileID: 542494336}
   - component: {fileID: 542494335}
+  - component: {fileID: 542494337}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2644,6 +2924,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &542494337
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542494333}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &548691392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,7 +2949,7 @@ GameObject:
   - component: {fileID: 548691393}
   m_Layer: 0
   m_Name: Pillars (59)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2687,9 +2981,10 @@ GameObject:
   - component: {fileID: 560473056}
   - component: {fileID: 560473058}
   - component: {fileID: 560473057}
+  - component: {fileID: 560473059}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2757,6 +3052,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &560473059
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560473055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &560675306
 GameObject:
   m_ObjectHideFlags: 0
@@ -2768,7 +3077,7 @@ GameObject:
   - component: {fileID: 560675307}
   m_Layer: 0
   m_Name: Pillars (12)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2787,7 +3096,7 @@ Transform:
   - {fileID: 1530478039}
   - {fileID: 1914853406}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &602726907
 GameObject:
@@ -2800,7 +3109,7 @@ GameObject:
   - component: {fileID: 602726908}
   m_Layer: 0
   m_Name: Pillars (58)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2832,7 +3141,7 @@ GameObject:
   - component: {fileID: 616753588}
   m_Layer: 0
   m_Name: Pillars (20)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2851,7 +3160,7 @@ Transform:
   - {fileID: 1014892662}
   - {fileID: 1556391326}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &627307453
 GameObject:
@@ -2864,9 +3173,10 @@ GameObject:
   - component: {fileID: 627307454}
   - component: {fileID: 627307456}
   - component: {fileID: 627307455}
+  - component: {fileID: 627307457}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2934,6 +3244,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &627307457
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627307453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!43 &638742660
 Mesh:
   m_ObjectHideFlags: 0
@@ -3109,9 +3433,10 @@ GameObject:
   - component: {fileID: 643504856}
   - component: {fileID: 643504858}
   - component: {fileID: 643504857}
+  - component: {fileID: 643504859}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3179,6 +3504,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &643504859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643504855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &653260035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,9 +3577,10 @@ GameObject:
   - component: {fileID: 665771158}
   - component: {fileID: 665771160}
   - component: {fileID: 665771159}
+  - component: {fileID: 665771161}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3308,6 +3648,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &665771161
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665771157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &680711883
 GameObject:
   m_ObjectHideFlags: 0
@@ -3319,7 +3673,7 @@ GameObject:
   - component: {fileID: 680711884}
   m_Layer: 0
   m_Name: Pillars (15)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3338,7 +3692,7 @@ Transform:
   - {fileID: 542494334}
   - {fileID: 1919068773}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &681525321
 GameObject:
@@ -3351,9 +3705,10 @@ GameObject:
   - component: {fileID: 681525322}
   - component: {fileID: 681525324}
   - component: {fileID: 681525323}
+  - component: {fileID: 681525325}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3421,6 +3776,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &681525325
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681525321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &696903914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3432,9 +3801,10 @@ GameObject:
   - component: {fileID: 696903915}
   - component: {fileID: 696903917}
   - component: {fileID: 696903916}
+  - component: {fileID: 696903918}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3502,6 +3872,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &696903918
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696903914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &705115993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3513,7 +3897,7 @@ GameObject:
   - component: {fileID: 705115994}
   m_Layer: 0
   m_Name: Pillars (25)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3532,7 +3916,7 @@ Transform:
   - {fileID: 1272195552}
   - {fileID: 1607835605}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &722187917
 GameObject:
@@ -3545,9 +3929,10 @@ GameObject:
   - component: {fileID: 722187918}
   - component: {fileID: 722187920}
   - component: {fileID: 722187919}
+  - component: {fileID: 722187921}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3615,7 +4000,21 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &756198767
+--- !u!64 &722187921
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722187917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
+--- !u!1 &727539142
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3623,79 +4022,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 756198768}
-  - component: {fileID: 756198770}
-  - component: {fileID: 756198769}
+  - component: {fileID: 727539144}
+  - component: {fileID: 727539143}
   m_Layer: 0
-  m_Name: Hexagon (1)
+  m_Name: WorldManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &756198768
+--- !u!114 &727539143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727539142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c248f515e942e4da25c645c8e4db01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &727539144
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756198767}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.55, z: 0}
-  m_LocalScale: {x: 1, y: 0.1, z: 1}
+  m_GameObject: {fileID: 727539142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.053215, y: 0.0564003, z: 0.4329586}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1807475367}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &756198769
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756198767}
-  m_Mesh: {fileID: 638742660}
---- !u!23 &756198770
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756198767}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3314c6b02db5ca44db325cefc0428ec6, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &760349336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,9 +4068,10 @@ GameObject:
   - component: {fileID: 760349337}
   - component: {fileID: 760349339}
   - component: {fileID: 760349338}
+  - component: {fileID: 760349340}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3777,6 +4139,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &760349340
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760349336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &777931215
 GameObject:
   m_ObjectHideFlags: 0
@@ -3788,9 +4164,10 @@ GameObject:
   - component: {fileID: 777931216}
   - component: {fileID: 777931218}
   - component: {fileID: 777931217}
+  - component: {fileID: 777931219}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3858,6 +4235,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &777931219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777931215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &780898882
 GameObject:
   m_ObjectHideFlags: 0
@@ -3869,9 +4260,10 @@ GameObject:
   - component: {fileID: 780898883}
   - component: {fileID: 780898885}
   - component: {fileID: 780898884}
+  - component: {fileID: 780898886}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3939,6 +4331,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &780898886
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780898882}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &793535337
 GameObject:
   m_ObjectHideFlags: 0
@@ -3950,9 +4356,10 @@ GameObject:
   - component: {fileID: 793535338}
   - component: {fileID: 793535340}
   - component: {fileID: 793535339}
+  - component: {fileID: 793535341}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4020,6 +4427,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &793535341
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793535337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &802164225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4031,9 +4452,10 @@ GameObject:
   - component: {fileID: 802164226}
   - component: {fileID: 802164228}
   - component: {fileID: 802164227}
+  - component: {fileID: 802164229}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4101,6 +4523,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &802164229
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802164225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &803498195
 GameObject:
   m_ObjectHideFlags: 0
@@ -4112,9 +4548,10 @@ GameObject:
   - component: {fileID: 803498196}
   - component: {fileID: 803498198}
   - component: {fileID: 803498197}
+  - component: {fileID: 803498199}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4182,6 +4619,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &803498199
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803498195}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &806938296
 GameObject:
   m_ObjectHideFlags: 0
@@ -4237,9 +4688,10 @@ GameObject:
   - component: {fileID: 818074786}
   - component: {fileID: 818074788}
   - component: {fileID: 818074787}
+  - component: {fileID: 818074789}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4307,6 +4759,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &818074789
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818074785}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &827981632
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,9 +4784,10 @@ GameObject:
   - component: {fileID: 827981633}
   - component: {fileID: 827981635}
   - component: {fileID: 827981634}
+  - component: {fileID: 827981636}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4388,6 +4855,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &827981636
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827981632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &827985334
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,9 +4880,10 @@ GameObject:
   - component: {fileID: 827985335}
   - component: {fileID: 827985337}
   - component: {fileID: 827985336}
+  - component: {fileID: 827985338}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4469,6 +4951,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &827985338
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827985334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &843997765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,7 +4976,7 @@ GameObject:
   - component: {fileID: 843997766}
   m_Layer: 0
   m_Name: Pillars (38)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4512,7 +5008,7 @@ GameObject:
   - component: {fileID: 867766678}
   m_Layer: 0
   m_Name: Pillars (49)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4544,9 +5040,10 @@ GameObject:
   - component: {fileID: 889103287}
   - component: {fileID: 889103289}
   - component: {fileID: 889103288}
+  - component: {fileID: 889103290}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4614,6 +5111,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &889103290
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889103286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &914031306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4625,7 +5136,7 @@ GameObject:
   - component: {fileID: 914031307}
   m_Layer: 0
   m_Name: Pillars (48)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4657,9 +5168,10 @@ GameObject:
   - component: {fileID: 928314017}
   - component: {fileID: 928314019}
   - component: {fileID: 928314018}
+  - component: {fileID: 928314020}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4727,6 +5239,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &928314020
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928314016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &931699066
 GameObject:
   m_ObjectHideFlags: 0
@@ -4738,9 +5264,10 @@ GameObject:
   - component: {fileID: 931699067}
   - component: {fileID: 931699069}
   - component: {fileID: 931699068}
+  - component: {fileID: 931699070}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4808,6 +5335,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &931699070
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931699066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &934330027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,9 +5360,10 @@ GameObject:
   - component: {fileID: 934330028}
   - component: {fileID: 934330030}
   - component: {fileID: 934330029}
+  - component: {fileID: 934330031}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4889,6 +5431,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &934330031
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934330027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &953804982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4900,9 +5456,10 @@ GameObject:
   - component: {fileID: 953804983}
   - component: {fileID: 953804985}
   - component: {fileID: 953804984}
+  - component: {fileID: 953804986}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4970,6 +5527,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &953804986
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953804982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &960209981
 GameObject:
   m_ObjectHideFlags: 0
@@ -4981,7 +5552,7 @@ GameObject:
   - component: {fileID: 960209982}
   m_Layer: 0
   m_Name: Pillars (53)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5013,9 +5584,10 @@ GameObject:
   - component: {fileID: 967187407}
   - component: {fileID: 967187409}
   - component: {fileID: 967187408}
+  - component: {fileID: 967187410}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5083,6 +5655,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &967187410
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967187406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &970178525
 GameObject:
   m_ObjectHideFlags: 0
@@ -5094,9 +5680,10 @@ GameObject:
   - component: {fileID: 970178526}
   - component: {fileID: 970178528}
   - component: {fileID: 970178527}
+  - component: {fileID: 970178529}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5164,6 +5751,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &970178529
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970178525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &987865775
 GameObject:
   m_ObjectHideFlags: 0
@@ -5175,9 +5776,10 @@ GameObject:
   - component: {fileID: 987865776}
   - component: {fileID: 987865778}
   - component: {fileID: 987865777}
+  - component: {fileID: 987865779}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5245,6 +5847,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &987865779
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987865775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &998679936
 GameObject:
   m_ObjectHideFlags: 0
@@ -5256,9 +5872,10 @@ GameObject:
   - component: {fileID: 998679937}
   - component: {fileID: 998679939}
   - component: {fileID: 998679938}
+  - component: {fileID: 998679940}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5326,6 +5943,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &998679940
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998679936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1001815851
 GameObject:
   m_ObjectHideFlags: 0
@@ -5337,9 +5968,10 @@ GameObject:
   - component: {fileID: 1001815852}
   - component: {fileID: 1001815854}
   - component: {fileID: 1001815853}
+  - component: {fileID: 1001815855}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5407,6 +6039,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1001815855
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001815851}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1004714902
 GameObject:
   m_ObjectHideFlags: 0
@@ -5418,9 +6064,10 @@ GameObject:
   - component: {fileID: 1004714903}
   - component: {fileID: 1004714905}
   - component: {fileID: 1004714904}
+  - component: {fileID: 1004714906}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5488,6 +6135,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1004714906
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004714902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1014892661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,9 +6160,10 @@ GameObject:
   - component: {fileID: 1014892662}
   - component: {fileID: 1014892664}
   - component: {fileID: 1014892663}
+  - component: {fileID: 1014892665}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5569,6 +6231,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1014892665
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014892661}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1025970621
 GameObject:
   m_ObjectHideFlags: 0
@@ -5580,7 +6256,7 @@ GameObject:
   - component: {fileID: 1025970622}
   m_Layer: 0
   m_Name: Pillars (24)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5599,7 +6275,7 @@ Transform:
   - {fileID: 1441466610}
   - {fileID: 1727964474}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030388881
 GameObject:
@@ -5612,9 +6288,10 @@ GameObject:
   - component: {fileID: 1030388882}
   - component: {fileID: 1030388884}
   - component: {fileID: 1030388883}
+  - component: {fileID: 1030388885}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5682,6 +6359,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1030388885
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030388881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1042821966
 GameObject:
   m_ObjectHideFlags: 0
@@ -5693,9 +6384,10 @@ GameObject:
   - component: {fileID: 1042821967}
   - component: {fileID: 1042821969}
   - component: {fileID: 1042821968}
+  - component: {fileID: 1042821970}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5763,6 +6455,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1042821970
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042821966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1048745510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5774,9 +6480,10 @@ GameObject:
   - component: {fileID: 1048745511}
   - component: {fileID: 1048745513}
   - component: {fileID: 1048745512}
+  - component: {fileID: 1048745514}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5844,6 +6551,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1048745514
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048745510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1079958296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5855,9 +6576,10 @@ GameObject:
   - component: {fileID: 1079958297}
   - component: {fileID: 1079958299}
   - component: {fileID: 1079958298}
+  - component: {fileID: 1079958300}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5925,6 +6647,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1079958300
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079958296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1081417933
 GameObject:
   m_ObjectHideFlags: 0
@@ -5936,9 +6672,10 @@ GameObject:
   - component: {fileID: 1081417934}
   - component: {fileID: 1081417936}
   - component: {fileID: 1081417935}
+  - component: {fileID: 1081417937}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6006,6 +6743,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1081417937
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081417933}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1106687928
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,9 +6768,10 @@ GameObject:
   - component: {fileID: 1106687929}
   - component: {fileID: 1106687931}
   - component: {fileID: 1106687930}
+  - component: {fileID: 1106687932}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6087,6 +6839,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1106687932
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106687928}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1108724825
 GameObject:
   m_ObjectHideFlags: 0
@@ -6098,7 +6864,7 @@ GameObject:
   - component: {fileID: 1108724826}
   m_Layer: 0
   m_Name: Pillars (27)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6130,7 +6896,7 @@ GameObject:
   - component: {fileID: 1120810340}
   m_Layer: 0
   m_Name: Pillars (32)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6162,7 +6928,7 @@ GameObject:
   - component: {fileID: 1120835476}
   m_Layer: 0
   m_Name: Pillars (36)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6194,9 +6960,10 @@ GameObject:
   - component: {fileID: 1123592851}
   - component: {fileID: 1123592853}
   - component: {fileID: 1123592852}
+  - component: {fileID: 1123592854}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6264,6 +7031,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1123592854
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123592850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1162001397
 GameObject:
   m_ObjectHideFlags: 0
@@ -6275,9 +7056,10 @@ GameObject:
   - component: {fileID: 1162001398}
   - component: {fileID: 1162001400}
   - component: {fileID: 1162001399}
+  - component: {fileID: 1162001401}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6345,6 +7127,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1162001401
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162001397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1163683185
 GameObject:
   m_ObjectHideFlags: 0
@@ -6356,9 +7152,10 @@ GameObject:
   - component: {fileID: 1163683186}
   - component: {fileID: 1163683188}
   - component: {fileID: 1163683187}
+  - component: {fileID: 1163683189}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6426,6 +7223,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1163683189
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163683185}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1163714244
 GameObject:
   m_ObjectHideFlags: 0
@@ -6437,9 +7248,10 @@ GameObject:
   - component: {fileID: 1163714245}
   - component: {fileID: 1163714247}
   - component: {fileID: 1163714246}
+  - component: {fileID: 1163714248}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6507,6 +7319,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1163714248
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163714244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1179585338
 GameObject:
   m_ObjectHideFlags: 0
@@ -6518,9 +7344,10 @@ GameObject:
   - component: {fileID: 1179585339}
   - component: {fileID: 1179585341}
   - component: {fileID: 1179585340}
+  - component: {fileID: 1179585342}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6588,6 +7415,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1179585342
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179585338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1189843190
 GameObject:
   m_ObjectHideFlags: 0
@@ -6599,9 +7440,10 @@ GameObject:
   - component: {fileID: 1189843191}
   - component: {fileID: 1189843193}
   - component: {fileID: 1189843192}
+  - component: {fileID: 1189843194}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6669,6 +7511,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1189843194
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189843190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1207324535
 GameObject:
   m_ObjectHideFlags: 0
@@ -6680,7 +7536,7 @@ GameObject:
   - component: {fileID: 1207324536}
   m_Layer: 0
   m_Name: Pillars (22)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6699,7 +7555,7 @@ Transform:
   - {fileID: 627307454}
   - {fileID: 285672631}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219529640
 GameObject:
@@ -6710,6 +7566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1219529641}
+  - component: {fileID: 1219529642}
   m_Layer: 0
   m_Name: StarterIsland
   m_TagString: Untagged
@@ -6733,6 +7590,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219529642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219529640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a6238a9f9fccf48b6d3421d1c48342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputBrain: {fileID: 806938297}
+  onTileClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1222077151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6744,7 +7617,7 @@ GameObject:
   - component: {fileID: 1222077152}
   m_Layer: 0
   m_Name: Pillars (50)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6776,9 +7649,10 @@ GameObject:
   - component: {fileID: 1238421956}
   - component: {fileID: 1238421958}
   - component: {fileID: 1238421957}
+  - component: {fileID: 1238421959}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6846,6 +7720,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1238421959
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238421955}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1239776251
 GameObject:
   m_ObjectHideFlags: 0
@@ -6857,7 +7745,7 @@ GameObject:
   - component: {fileID: 1239776252}
   m_Layer: 0
   m_Name: Pillars (28)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6889,7 +7777,7 @@ GameObject:
   - component: {fileID: 1262258210}
   m_Layer: 0
   m_Name: Pillars (2)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6921,9 +7809,10 @@ GameObject:
   - component: {fileID: 1272195552}
   - component: {fileID: 1272195554}
   - component: {fileID: 1272195553}
+  - component: {fileID: 1272195555}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6991,6 +7880,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1272195555
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272195551}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1277938575
 GameObject:
   m_ObjectHideFlags: 0
@@ -7002,9 +7905,10 @@ GameObject:
   - component: {fileID: 1277938576}
   - component: {fileID: 1277938578}
   - component: {fileID: 1277938577}
+  - component: {fileID: 1277938579}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7072,6 +7976,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1277938579
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277938575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1281474661
 GameObject:
   m_ObjectHideFlags: 0
@@ -7083,7 +8001,7 @@ GameObject:
   - component: {fileID: 1281474662}
   m_Layer: 0
   m_Name: Pillars (35)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7115,7 +8033,7 @@ GameObject:
   - component: {fileID: 1283932491}
   m_Layer: 0
   m_Name: Pillars (51)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7147,7 +8065,7 @@ GameObject:
   - component: {fileID: 1288269274}
   m_Layer: 0
   m_Name: Pillars (10)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7166,7 +8084,7 @@ Transform:
   - {fileID: 76571172}
   - {fileID: 1775746216}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1295371273
 GameObject:
@@ -7179,9 +8097,10 @@ GameObject:
   - component: {fileID: 1295371274}
   - component: {fileID: 1295371276}
   - component: {fileID: 1295371275}
+  - component: {fileID: 1295371277}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7249,6 +8168,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1295371277
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295371273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1315645950
 GameObject:
   m_ObjectHideFlags: 0
@@ -7260,7 +8193,7 @@ GameObject:
   - component: {fileID: 1315645951}
   m_Layer: 0
   m_Name: Pillars (43)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7292,9 +8225,10 @@ GameObject:
   - component: {fileID: 1317737195}
   - component: {fileID: 1317737197}
   - component: {fileID: 1317737196}
+  - component: {fileID: 1317737198}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7362,6 +8296,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1317737198
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317737194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1321456660
 GameObject:
   m_ObjectHideFlags: 0
@@ -7373,9 +8321,10 @@ GameObject:
   - component: {fileID: 1321456661}
   - component: {fileID: 1321456663}
   - component: {fileID: 1321456662}
+  - component: {fileID: 1321456664}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7443,6 +8392,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1321456664
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321456660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1330573572
 GameObject:
   m_ObjectHideFlags: 0
@@ -7454,9 +8417,10 @@ GameObject:
   - component: {fileID: 1330573573}
   - component: {fileID: 1330573575}
   - component: {fileID: 1330573574}
+  - component: {fileID: 1330573576}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7524,6 +8488,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1330573576
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330573572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1332272446
 GameObject:
   m_ObjectHideFlags: 0
@@ -7535,9 +8513,10 @@ GameObject:
   - component: {fileID: 1332272447}
   - component: {fileID: 1332272449}
   - component: {fileID: 1332272448}
+  - component: {fileID: 1332272450}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7605,6 +8584,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1332272450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332272446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1338212349
 GameObject:
   m_ObjectHideFlags: 0
@@ -7616,7 +8609,7 @@ GameObject:
   - component: {fileID: 1338212350}
   m_Layer: 0
   m_Name: Pillars (55)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7648,7 +8641,7 @@ GameObject:
   - component: {fileID: 1345596081}
   m_Layer: 0
   m_Name: Pillars (44)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7680,9 +8673,10 @@ GameObject:
   - component: {fileID: 1348331813}
   - component: {fileID: 1348331815}
   - component: {fileID: 1348331814}
+  - component: {fileID: 1348331816}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7750,6 +8744,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1348331816
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348331812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1373355387
 GameObject:
   m_ObjectHideFlags: 0
@@ -7761,7 +8769,7 @@ GameObject:
   - component: {fileID: 1373355388}
   m_Layer: 0
   m_Name: Pillars (45)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7793,7 +8801,7 @@ GameObject:
   - component: {fileID: 1380301113}
   m_Layer: 0
   m_Name: Pillars (18)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7812,7 +8820,7 @@ Transform:
   - {fileID: 1163714245}
   - {fileID: 998679937}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1394256608
 GameObject:
@@ -7825,9 +8833,10 @@ GameObject:
   - component: {fileID: 1394256609}
   - component: {fileID: 1394256611}
   - component: {fileID: 1394256610}
+  - component: {fileID: 1394256612}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7895,6 +8904,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1394256612
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394256608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1398464203
 GameObject:
   m_ObjectHideFlags: 0
@@ -7906,7 +8929,7 @@ GameObject:
   - component: {fileID: 1398464204}
   m_Layer: 0
   m_Name: Pillars (26)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7925,7 +8948,7 @@ Transform:
   - {fileID: 1680989001}
   - {fileID: 827981633}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1406756797
 GameObject:
@@ -7938,7 +8961,7 @@ GameObject:
   - component: {fileID: 1406756798}
   m_Layer: 0
   m_Name: Pillars (14)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7957,7 +8980,7 @@ Transform:
   - {fileID: 503092396}
   - {fileID: 1332272447}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1415539955
 GameObject:
@@ -7970,7 +8993,7 @@ GameObject:
   - component: {fileID: 1415539956}
   m_Layer: 0
   m_Name: Pillars (54)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8002,9 +9025,10 @@ GameObject:
   - component: {fileID: 1420161997}
   - component: {fileID: 1420161999}
   - component: {fileID: 1420161998}
+  - component: {fileID: 1420162000}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8072,6 +9096,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1420162000
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420161996}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1420169309
 GameObject:
   m_ObjectHideFlags: 0
@@ -8083,9 +9121,10 @@ GameObject:
   - component: {fileID: 1420169310}
   - component: {fileID: 1420169312}
   - component: {fileID: 1420169311}
+  - component: {fileID: 1420169313}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8153,6 +9192,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1420169313
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420169309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1430058210
 GameObject:
   m_ObjectHideFlags: 0
@@ -8164,9 +9217,10 @@ GameObject:
   - component: {fileID: 1430058211}
   - component: {fileID: 1430058213}
   - component: {fileID: 1430058212}
+  - component: {fileID: 1430058214}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8234,6 +9288,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1430058214
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430058210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1432154819
 GameObject:
   m_ObjectHideFlags: 0
@@ -8245,9 +9313,10 @@ GameObject:
   - component: {fileID: 1432154820}
   - component: {fileID: 1432154822}
   - component: {fileID: 1432154821}
+  - component: {fileID: 1432154823}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8315,6 +9384,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1432154823
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432154819}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1435040560
 GameObject:
   m_ObjectHideFlags: 0
@@ -8326,7 +9409,7 @@ GameObject:
   - component: {fileID: 1435040561}
   m_Layer: 0
   m_Name: Pillars (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8358,9 +9441,10 @@ GameObject:
   - component: {fileID: 1441466610}
   - component: {fileID: 1441466612}
   - component: {fileID: 1441466611}
+  - component: {fileID: 1441466613}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8428,6 +9512,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1441466613
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441466609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1444801231
 GameObject:
   m_ObjectHideFlags: 0
@@ -8439,9 +9537,10 @@ GameObject:
   - component: {fileID: 1444801232}
   - component: {fileID: 1444801234}
   - component: {fileID: 1444801233}
+  - component: {fileID: 1444801235}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8509,6 +9608,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1444801235
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444801231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1477059464
 GameObject:
   m_ObjectHideFlags: 0
@@ -8520,9 +9633,10 @@ GameObject:
   - component: {fileID: 1477059465}
   - component: {fileID: 1477059467}
   - component: {fileID: 1477059466}
+  - component: {fileID: 1477059468}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8590,6 +9704,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1477059468
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477059464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1480985703
 GameObject:
   m_ObjectHideFlags: 0
@@ -8601,9 +9729,10 @@ GameObject:
   - component: {fileID: 1480985704}
   - component: {fileID: 1480985706}
   - component: {fileID: 1480985705}
+  - component: {fileID: 1480985707}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8671,6 +9800,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1480985707
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480985703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1504630486
 GameObject:
   m_ObjectHideFlags: 0
@@ -8682,9 +9825,10 @@ GameObject:
   - component: {fileID: 1504630487}
   - component: {fileID: 1504630489}
   - component: {fileID: 1504630488}
+  - component: {fileID: 1504630490}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8752,6 +9896,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1504630490
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504630486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1508811344
 GameObject:
   m_ObjectHideFlags: 0
@@ -8763,9 +9921,10 @@ GameObject:
   - component: {fileID: 1508811345}
   - component: {fileID: 1508811347}
   - component: {fileID: 1508811346}
+  - component: {fileID: 1508811348}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8833,6 +9992,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1508811348
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508811344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1523972923
 GameObject:
   m_ObjectHideFlags: 0
@@ -8844,9 +10017,10 @@ GameObject:
   - component: {fileID: 1523972924}
   - component: {fileID: 1523972926}
   - component: {fileID: 1523972925}
+  - component: {fileID: 1523972927}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8914,6 +10088,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1523972927
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523972923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1530478038
 GameObject:
   m_ObjectHideFlags: 0
@@ -8925,9 +10113,10 @@ GameObject:
   - component: {fileID: 1530478039}
   - component: {fileID: 1530478041}
   - component: {fileID: 1530478040}
+  - component: {fileID: 1530478042}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8995,6 +10184,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1530478042
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530478038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1532684056
 GameObject:
   m_ObjectHideFlags: 0
@@ -9006,9 +10209,10 @@ GameObject:
   - component: {fileID: 1532684057}
   - component: {fileID: 1532684059}
   - component: {fileID: 1532684058}
+  - component: {fileID: 1532684060}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9076,6 +10280,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1532684060
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532684056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1547393918
 GameObject:
   m_ObjectHideFlags: 0
@@ -9087,9 +10305,10 @@ GameObject:
   - component: {fileID: 1547393919}
   - component: {fileID: 1547393921}
   - component: {fileID: 1547393920}
+  - component: {fileID: 1547393922}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9157,6 +10376,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1547393922
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547393918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1556391325
 GameObject:
   m_ObjectHideFlags: 0
@@ -9168,9 +10401,10 @@ GameObject:
   - component: {fileID: 1556391326}
   - component: {fileID: 1556391328}
   - component: {fileID: 1556391327}
+  - component: {fileID: 1556391329}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9238,6 +10472,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1556391329
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556391325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1558045347
 GameObject:
   m_ObjectHideFlags: 0
@@ -9249,7 +10497,7 @@ GameObject:
   - component: {fileID: 1558045348}
   m_Layer: 0
   m_Name: Pillars (7)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9268,7 +10516,7 @@ Transform:
   - {fileID: 1636331785}
   - {fileID: 1574664185}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1569424474
 GameObject:
@@ -9281,7 +10529,7 @@ GameObject:
   - component: {fileID: 1569424475}
   m_Layer: 0
   m_Name: Pillars (9)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9300,7 +10548,7 @@ Transform:
   - {fileID: 1835836541}
   - {fileID: 205709983}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1574664184
 GameObject:
@@ -9313,9 +10561,10 @@ GameObject:
   - component: {fileID: 1574664185}
   - component: {fileID: 1574664187}
   - component: {fileID: 1574664186}
+  - component: {fileID: 1574664188}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9383,6 +10632,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1574664188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574664184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1600395658
 GameObject:
   m_ObjectHideFlags: 0
@@ -9394,9 +10657,10 @@ GameObject:
   - component: {fileID: 1600395659}
   - component: {fileID: 1600395661}
   - component: {fileID: 1600395660}
+  - component: {fileID: 1600395662}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9464,6 +10728,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1600395662
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600395658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1607835604
 GameObject:
   m_ObjectHideFlags: 0
@@ -9475,9 +10753,10 @@ GameObject:
   - component: {fileID: 1607835605}
   - component: {fileID: 1607835607}
   - component: {fileID: 1607835606}
+  - component: {fileID: 1607835608}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9545,6 +10824,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1607835608
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607835604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1633974573
 GameObject:
   m_ObjectHideFlags: 0
@@ -9556,9 +10849,10 @@ GameObject:
   - component: {fileID: 1633974574}
   - component: {fileID: 1633974576}
   - component: {fileID: 1633974575}
+  - component: {fileID: 1633974577}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9626,6 +10920,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1633974577
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633974573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1636331784
 GameObject:
   m_ObjectHideFlags: 0
@@ -9637,9 +10945,10 @@ GameObject:
   - component: {fileID: 1636331785}
   - component: {fileID: 1636331787}
   - component: {fileID: 1636331786}
+  - component: {fileID: 1636331788}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9707,6 +11016,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1636331788
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636331784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1644157934
 GameObject:
   m_ObjectHideFlags: 0
@@ -9718,9 +11041,10 @@ GameObject:
   - component: {fileID: 1644157935}
   - component: {fileID: 1644157937}
   - component: {fileID: 1644157936}
+  - component: {fileID: 1644157938}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9788,6 +11112,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1644157938
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644157934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1646885871
 GameObject:
   m_ObjectHideFlags: 0
@@ -9799,9 +11137,10 @@ GameObject:
   - component: {fileID: 1646885872}
   - component: {fileID: 1646885874}
   - component: {fileID: 1646885873}
+  - component: {fileID: 1646885875}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9869,6 +11208,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1646885875
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646885871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1651641786
 GameObject:
   m_ObjectHideFlags: 0
@@ -9880,7 +11233,7 @@ GameObject:
   - component: {fileID: 1651641787}
   m_Layer: 0
   m_Name: Pillars (30)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9912,7 +11265,7 @@ GameObject:
   - component: {fileID: 1654713315}
   m_Layer: 0
   m_Name: Pillars (42)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10009,9 +11362,10 @@ GameObject:
   - component: {fileID: 1680989001}
   - component: {fileID: 1680989003}
   - component: {fileID: 1680989002}
+  - component: {fileID: 1680989004}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10079,6 +11433,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1680989004
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680989000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1687258581
 GameObject:
   m_ObjectHideFlags: 0
@@ -10251,9 +11619,10 @@ GameObject:
   - component: {fileID: 1719984316}
   - component: {fileID: 1719984318}
   - component: {fileID: 1719984317}
+  - component: {fileID: 1719984319}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10321,6 +11690,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1719984319
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719984315}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1727964473
 GameObject:
   m_ObjectHideFlags: 0
@@ -10332,9 +11715,10 @@ GameObject:
   - component: {fileID: 1727964474}
   - component: {fileID: 1727964476}
   - component: {fileID: 1727964475}
+  - component: {fileID: 1727964477}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10402,6 +11786,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1727964477
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727964473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1733960542
 GameObject:
   m_ObjectHideFlags: 0
@@ -10413,7 +11811,7 @@ GameObject:
   - component: {fileID: 1733960543}
   m_Layer: 0
   m_Name: Pillars (37)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10445,7 +11843,7 @@ GameObject:
   - component: {fileID: 1768453864}
   m_Layer: 0
   m_Name: Pillars (17)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10464,7 +11862,7 @@ Transform:
   - {fileID: 2413981}
   - {fileID: 780898883}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1775746215
 GameObject:
@@ -10477,9 +11875,10 @@ GameObject:
   - component: {fileID: 1775746216}
   - component: {fileID: 1775746218}
   - component: {fileID: 1775746217}
+  - component: {fileID: 1775746219}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10547,6 +11946,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1775746219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775746215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1781897981
 GameObject:
   m_ObjectHideFlags: 0
@@ -10558,9 +11971,10 @@ GameObject:
   - component: {fileID: 1781897982}
   - component: {fileID: 1781897984}
   - component: {fileID: 1781897983}
+  - component: {fileID: 1781897985}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10628,6 +12042,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1781897985
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781897981}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1784451468
 GameObject:
   m_ObjectHideFlags: 0
@@ -10639,7 +12067,7 @@ GameObject:
   - component: {fileID: 1784451469}
   m_Layer: 0
   m_Name: Pillars (21)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10658,7 +12086,7 @@ Transform:
   - {fileID: 2005987775}
   - {fileID: 45139740}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790639018
 GameObject:
@@ -10671,9 +12099,10 @@ GameObject:
   - component: {fileID: 1790639019}
   - component: {fileID: 1790639021}
   - component: {fileID: 1790639020}
+  - component: {fileID: 1790639022}
   m_Layer: 0
   m_Name: Hexagon (2)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10741,6 +12170,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1790639022
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790639018}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1794852776
 GameObject:
   m_ObjectHideFlags: 0
@@ -10752,9 +12195,10 @@ GameObject:
   - component: {fileID: 1794852777}
   - component: {fileID: 1794852779}
   - component: {fileID: 1794852778}
+  - component: {fileID: 1794852780}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10822,6 +12266,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1794852780
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794852776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1796167860
 GameObject:
   m_ObjectHideFlags: 0
@@ -10833,9 +12291,10 @@ GameObject:
   - component: {fileID: 1796167861}
   - component: {fileID: 1796167863}
   - component: {fileID: 1796167862}
+  - component: {fileID: 1796167864}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10903,6 +12362,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1796167864
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796167860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1803469893
 GameObject:
   m_ObjectHideFlags: 0
@@ -10914,9 +12387,10 @@ GameObject:
   - component: {fileID: 1803469894}
   - component: {fileID: 1803469896}
   - component: {fileID: 1803469895}
+  - component: {fileID: 1803469897}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10984,6 +12458,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1803469897
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803469893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1806768537
 GameObject:
   m_ObjectHideFlags: 0
@@ -10995,7 +12483,7 @@ GameObject:
   - component: {fileID: 1806768538}
   m_Layer: 0
   m_Name: Pillars (61)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11016,38 +12504,6 @@ Transform:
   m_Father: {fileID: 1678658926}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1807475366
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1807475367}
-  m_Layer: 0
-  m_Name: Pillars (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1807475367
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807475366}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5.5, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 169057891}
-  - {fileID: 756198768}
-  m_Father: {fileID: 1833970568}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820086881
 GameObject:
   m_ObjectHideFlags: 0
@@ -11059,9 +12515,10 @@ GameObject:
   - component: {fileID: 1820086882}
   - component: {fileID: 1820086884}
   - component: {fileID: 1820086883}
+  - component: {fileID: 1820086885}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11129,6 +12586,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1820086885
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820086881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1821405547
 GameObject:
   m_ObjectHideFlags: 0
@@ -11140,9 +12611,10 @@ GameObject:
   - component: {fileID: 1821405548}
   - component: {fileID: 1821405550}
   - component: {fileID: 1821405549}
+  - component: {fileID: 1821405551}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11210,6 +12682,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1821405551
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821405547}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1831495235
 GameObject:
   m_ObjectHideFlags: 0
@@ -11221,9 +12707,10 @@ GameObject:
   - component: {fileID: 1831495236}
   - component: {fileID: 1831495238}
   - component: {fileID: 1831495237}
+  - component: {fileID: 1831495239}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11291,6 +12778,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1831495239
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831495235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1833970567
 GameObject:
   m_ObjectHideFlags: 0
@@ -11322,7 +12823,6 @@ Transform:
   - {fileID: 1435040561}
   - {fileID: 1262258210}
   - {fileID: 1903553077}
-  - {fileID: 1807475367}
   - {fileID: 2028015068}
   - {fileID: 308511442}
   - {fileID: 1558045348}
@@ -11359,9 +12859,10 @@ GameObject:
   - component: {fileID: 1835836541}
   - component: {fileID: 1835836543}
   - component: {fileID: 1835836542}
+  - component: {fileID: 1835836544}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11429,6 +12930,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1835836544
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835836540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1856122711
 GameObject:
   m_ObjectHideFlags: 0
@@ -11440,7 +12955,7 @@ GameObject:
   - component: {fileID: 1856122712}
   m_Layer: 0
   m_Name: Pillars (23)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11459,7 +12974,7 @@ Transform:
   - {fileID: 1781897982}
   - {fileID: 1547393919}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1862597970
 GameObject:
@@ -11472,7 +12987,7 @@ GameObject:
   - component: {fileID: 1862597971}
   m_Layer: 0
   m_Name: Pillars (19)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11491,7 +13006,7 @@ Transform:
   - {fileID: 793535338}
   - {fileID: 1532684057}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1876611248
 GameObject:
@@ -11504,7 +13019,7 @@ GameObject:
   - component: {fileID: 1876611249}
   m_Layer: 0
   m_Name: Pillars (56)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11536,9 +13051,10 @@ GameObject:
   - component: {fileID: 1880571915}
   - component: {fileID: 1880571917}
   - component: {fileID: 1880571916}
+  - component: {fileID: 1880571918}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11606,6 +13122,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1880571918
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880571914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1880852767
 GameObject:
   m_ObjectHideFlags: 0
@@ -11617,9 +13147,10 @@ GameObject:
   - component: {fileID: 1880852768}
   - component: {fileID: 1880852770}
   - component: {fileID: 1880852769}
+  - component: {fileID: 1880852771}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11687,6 +13218,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1880852771
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880852767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1882056967
 GameObject:
   m_ObjectHideFlags: 0
@@ -11698,7 +13243,7 @@ GameObject:
   - component: {fileID: 1882056968}
   m_Layer: 0
   m_Name: Pillars (41)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11731,7 +13276,7 @@ GameObject:
   - component: {fileID: 1903553077}
   m_Layer: 0
   m_Name: Pillars (3)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11763,9 +13308,10 @@ GameObject:
   - component: {fileID: 1914853406}
   - component: {fileID: 1914853408}
   - component: {fileID: 1914853407}
+  - component: {fileID: 1914853409}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11833,6 +13379,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1914853409
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914853405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1915357794
 GameObject:
   m_ObjectHideFlags: 0
@@ -11844,9 +13404,10 @@ GameObject:
   - component: {fileID: 1915357795}
   - component: {fileID: 1915357797}
   - component: {fileID: 1915357796}
+  - component: {fileID: 1915357798}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11914,6 +13475,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1915357798
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915357794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1919068772
 GameObject:
   m_ObjectHideFlags: 0
@@ -11925,9 +13500,10 @@ GameObject:
   - component: {fileID: 1919068773}
   - component: {fileID: 1919068775}
   - component: {fileID: 1919068774}
+  - component: {fileID: 1919068776}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11995,6 +13571,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1919068776
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919068772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1925806214
 GameObject:
   m_ObjectHideFlags: 0
@@ -12006,9 +13596,10 @@ GameObject:
   - component: {fileID: 1925806215}
   - component: {fileID: 1925806217}
   - component: {fileID: 1925806216}
+  - component: {fileID: 1925806218}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12076,6 +13667,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1925806218
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1925806214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1931689031
 GameObject:
   m_ObjectHideFlags: 0
@@ -12087,7 +13692,7 @@ GameObject:
   - component: {fileID: 1931689032}
   m_Layer: 0
   m_Name: Pillars (31)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12119,7 +13724,7 @@ GameObject:
   - component: {fileID: 1955677596}
   m_Layer: 0
   m_Name: Pillars (16)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12138,7 +13743,7 @@ Transform:
   - {fileID: 665771158}
   - {fileID: 162425396}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1957146368
 GameObject:
@@ -12151,9 +13756,10 @@ GameObject:
   - component: {fileID: 1957146369}
   - component: {fileID: 1957146371}
   - component: {fileID: 1957146370}
+  - component: {fileID: 1957146372}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12221,6 +13827,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1957146372
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957146368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1959542472
 GameObject:
   m_ObjectHideFlags: 0
@@ -12232,9 +13852,10 @@ GameObject:
   - component: {fileID: 1959542473}
   - component: {fileID: 1959542475}
   - component: {fileID: 1959542474}
+  - component: {fileID: 1959542476}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12302,6 +13923,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1959542476
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959542472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1964865431
 GameObject:
   m_ObjectHideFlags: 0
@@ -12313,7 +13948,7 @@ GameObject:
   - component: {fileID: 1964865432}
   m_Layer: 0
   m_Name: Pillars
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12345,9 +13980,10 @@ GameObject:
   - component: {fileID: 1965688706}
   - component: {fileID: 1965688708}
   - component: {fileID: 1965688707}
+  - component: {fileID: 1965688709}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12415,6 +14051,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1965688709
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965688705}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1972919401
 GameObject:
   m_ObjectHideFlags: 0
@@ -12426,9 +14076,10 @@ GameObject:
   - component: {fileID: 1972919402}
   - component: {fileID: 1972919404}
   - component: {fileID: 1972919403}
+  - component: {fileID: 1972919405}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12496,6 +14147,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1972919405
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972919401}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &1977609680
 GameObject:
   m_ObjectHideFlags: 0
@@ -12507,7 +14172,7 @@ GameObject:
   - component: {fileID: 1977609681}
   m_Layer: 0
   m_Name: Pillars (57)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12539,7 +14204,7 @@ GameObject:
   - component: {fileID: 1979838458}
   m_Layer: 0
   m_Name: Pillars (33)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12571,9 +14236,10 @@ GameObject:
   - component: {fileID: 1992469344}
   - component: {fileID: 1992469346}
   - component: {fileID: 1992469345}
+  - component: {fileID: 1992469347}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12641,6 +14307,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1992469347
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992469343}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &2001661145
 GameObject:
   m_ObjectHideFlags: 0
@@ -12652,7 +14332,7 @@ GameObject:
   - component: {fileID: 2001661146}
   m_Layer: 0
   m_Name: Pillars (11)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12671,7 +14351,7 @@ Transform:
   - {fileID: 1330573573}
   - {fileID: 1030388882}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2005987774
 GameObject:
@@ -12684,9 +14364,10 @@ GameObject:
   - component: {fileID: 2005987775}
   - component: {fileID: 2005987777}
   - component: {fileID: 2005987776}
+  - component: {fileID: 2005987778}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12754,6 +14435,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2005987778
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005987774}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &2028015067
 GameObject:
   m_ObjectHideFlags: 0
@@ -12765,7 +14460,7 @@ GameObject:
   - component: {fileID: 2028015068}
   m_Layer: 0
   m_Name: Pillars (5)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12784,7 +14479,7 @@ Transform:
   - {fileID: 760349337}
   - {fileID: 2029158627}
   m_Father: {fileID: 1833970568}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2029158626
 GameObject:
@@ -12797,9 +14492,10 @@ GameObject:
   - component: {fileID: 2029158627}
   - component: {fileID: 2029158629}
   - component: {fileID: 2029158628}
+  - component: {fileID: 2029158630}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12867,6 +14563,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2029158630
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029158626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 638742660}
 --- !u!1 &2070041330
 GameObject:
   m_ObjectHideFlags: 0
@@ -12974,7 +14684,7 @@ GameObject:
   - component: {fileID: 2108499152}
   m_Layer: 0
   m_Name: Pillars (39)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13006,7 +14716,7 @@ GameObject:
   - component: {fileID: 2117412068}
   m_Layer: 0
   m_Name: Pillars (40)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
