@@ -4,17 +4,22 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(WorldBuilder))]
 public class WorldManager : MonoBehaviour
 {
     private static WorldManager _instance;
-
+    
     [SerializeField] private TileSetContainer grassTiles;
     [SerializeField] private TileSetContainer sandTiles;
 
     private Dictionary<Vector2, GameObject> _hexagons = new Dictionary<Vector2, GameObject>();
+    private WorldBuilder _worldBuilder;
 
+    
     private void Awake()
     {
+        _worldBuilder = GetComponent<WorldBuilder>();
+        
         GameObject[] foundHexagons = GameObject.FindGameObjectsWithTag("HexagonTile");
         foreach (var o in foundHexagons)
         {
@@ -24,22 +29,11 @@ public class WorldManager : MonoBehaviour
             _hexagons.Add(key, o);
         }
     }
-
+    
     public GameObject GetTileFromPosition(Vector2 position)
     {
         return _hexagons.OrderBy(pair => Vector2.Distance(pair.Key, position)).FirstOrDefault().Value;
     }
-
-    public bool SpawnTile(Vector2 tileToSpawn)
-    {
-        if (_hexagons.ContainsKey(tileToSpawn)) return false;
-        
-        GameObject hexTile = Instantiate(grassTiles.GetRandom());
-        hexTile.transform.position = new Vector3(tileToSpawn.x, 0, tileToSpawn.y);
-        _hexagons.Add(tileToSpawn, hexTile);
-        return true;
-    }
-
     public bool IsEmptyTile(Vector2 position)
     {
         return !_hexagons.ContainsKey(position);
@@ -60,29 +54,17 @@ public class WorldManager : MonoBehaviour
             Vector2 rightTop = hexagonsKey + new Vector2(1.5f, 1);
             Vector2 top = hexagonsKey + new Vector2(0, 2);
 
-            if (TrySpawn(leftBottom)) return true;
-            if (TrySpawn(rightBottom)) return true;
-            if (TrySpawn(bottom)) return true;
-            if (TrySpawn(leftTop)) return true;
-            if (TrySpawn(rightTop)) return true;
-            if (TrySpawn(top)) return true;
+            if (_worldBuilder.TryCreateTile(leftBottom)) return true;
+            if (_worldBuilder.TryCreateTile(rightBottom)) return true;
+            if (_worldBuilder.TryCreateTile(bottom)) return true;
+            if (_worldBuilder.TryCreateTile(leftTop)) return true;
+            if (_worldBuilder.TryCreateTile(rightTop)) return true;
+            if (_worldBuilder.TryCreateTile(top)) return true;
         }
 
         return false;
     }
-
-    private bool TrySpawn(Vector2 position)
-    {
-        if (IsEmptyTile(position))
-        {
-            Debug.Log("spawning at position " + position);
-            SpawnTile(position);
-            return true;
-        }
-
-        return false;
-    }
-
+    
     public static WorldManager Instance
     {
         get
@@ -104,4 +86,10 @@ public class WorldManager : MonoBehaviour
     {
         return _hexagons.OrderBy(pair => Vector2.Distance(pair.Key, vector2)).FirstOrDefault().Value;
     }
+
+    public TileSetContainer GrassTiles => grassTiles;
+
+    public TileSetContainer SandTiles => sandTiles;
+
+    public Dictionary<Vector2, GameObject> Hexagons => _hexagons;
 }

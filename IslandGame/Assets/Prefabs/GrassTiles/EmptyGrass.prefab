@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 360846692023650546}
   - component: {fileID: 360846692023650556}
   - component: {fileID: 360846692023650557}
+  - component: {fileID: 4741013810521809986}
   m_Layer: 0
   m_Name: Hexagon
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,6 +82,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360846692023650547}
   m_Mesh: {fileID: 4300000, guid: e859f2c05dc8a6f40aa4a9bc47a3a9f8, type: 2}
+--- !u!64 &4741013810521809986
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360846692023650547}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e859f2c05dc8a6f40aa4a9bc47a3a9f8, type: 2}
 --- !u!1 &360846692711050552
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,9 +107,10 @@ GameObject:
   - component: {fileID: 360846692711050555}
   - component: {fileID: 360846692711050501}
   - component: {fileID: 360846692711050554}
+  - component: {fileID: 6945058750449247017}
   m_Layer: 0
   m_Name: Hexagon (1)
-  m_TagString: Untagged
+  m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,6 +177,20 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360846692711050552}
+  m_Mesh: {fileID: 4300000, guid: e859f2c05dc8a6f40aa4a9bc47a3a9f8, type: 2}
+--- !u!64 &6945058750449247017
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360846692711050552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e859f2c05dc8a6f40aa4a9bc47a3a9f8, type: 2}
 --- !u!1 &360846693528489167
 GameObject:
