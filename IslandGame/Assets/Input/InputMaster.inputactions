@@ -52,6 +52,14 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "SecondaryFingerDelta",
+                    "type": "Value",
+                    "id": "521fcfb6-3801-45f8-8bbf-b5f2a56ab288",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -115,7 +123,7 @@
                     "id": "21f17acb-e49f-446c-8d04-71087797f782",
                     "path": "<Touchscreen>/touch0/delta",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "ScaleVector2(x=0.1,y=0.1)",
                     "groups": "TouchScreen",
                     "action": "PrimaryFingerDelta",
                     "isComposite": false,
@@ -140,6 +148,17 @@
                     "processors": "",
                     "groups": "TouchScreen",
                     "action": "PrimaryFingerContact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4f5067a-0a39-4a60-97ae-484425f06cd3",
+                    "path": "<Touchscreen>/touch1/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "TouchScreen",
+                    "action": "SecondaryFingerDelta",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

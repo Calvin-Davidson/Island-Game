@@ -6,6 +6,7 @@ using UnityEngine;
 public class PinchDetection : MonoBehaviour
 {
     private InputBrain _brain;
+    private bool _isDetectingZoom;
     
     private Coroutine _zoomDetectionCoroutine;
     private Transform _cameraTransform;
@@ -22,11 +23,13 @@ public class PinchDetection : MonoBehaviour
     public void ZoomStart()
     {
         _zoomDetectionCoroutine = StartCoroutine(ZoomDetection());
+        _isDetectingZoom = true;
     }
 
     public void ZoomEnd()
     {
         StopCoroutine(_zoomDetectionCoroutine);
+        _isDetectingZoom = false;
     }
 
     IEnumerator ZoomDetection()
@@ -40,7 +43,7 @@ public class PinchDetection : MonoBehaviour
             Vector2 secondaryPosition = _brain.InputActionAsset["SecondaryFingerPosition"].ReadValue<Vector2>();
 
             currentDistance = Vector2.Distance(primaryPosition, secondaryPosition);
-
+            
             // zoom out
             if (currentDistance > previousDistance)
             {
@@ -63,4 +66,6 @@ public class PinchDetection : MonoBehaviour
         get => _brain;
         set => _brain = value;
     }
+
+    public bool IsDetectingZoom => _isDetectingZoom;
 }
