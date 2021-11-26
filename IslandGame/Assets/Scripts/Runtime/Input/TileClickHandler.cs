@@ -31,7 +31,7 @@ public class TileClickHandler : MonoBehaviour
                 GameObject obj = WorldManager.Instance.GetClosestTileFromPosition(new Vector2(worldPosition.x, worldPosition.z));
                 onTileClick?.Invoke(obj);
 
-                WorldManager.Instance.ExpandIsland();
+                WorldManager.Instance.ExpandIsland(50);
             }
         };
     }

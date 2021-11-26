@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(WorldManager))]
 public class WorldBuilder : MonoBehaviour
 {
+    [SerializeField] private float popupAnimationSpeed;
+
     private WorldManager _worldManager;
 
     private void Awake()
@@ -16,13 +18,13 @@ public class WorldBuilder : MonoBehaviour
     public GameObject CreateTile(Vector2 spawnLocation)
     {
         if (_worldManager.Hexagons.ContainsKey(spawnLocation)) return null;
-        
+
         GameObject hexTile = GameObject.Instantiate(_worldManager.GrassTiles.GetRandom());
         hexTile.transform.position = new Vector3(spawnLocation.x, 0, spawnLocation.y);
         _worldManager.Hexagons.Add(spawnLocation, hexTile);
 
-        _worldManager.StartCoroutine(TilePopupAnimation());
-        return hexTile;    
+        StartCoroutine(TilePopupAnimation(hexTile));
+        return hexTile;
     }
 
     public GameObject TryCreateTile(Vector2 spawnLocation)
@@ -30,8 +32,8 @@ public class WorldBuilder : MonoBehaviour
         if (!_worldManager.IsEmptyTile(spawnLocation)) return null;
         return CreateTile(spawnLocation);
     }
-    
-    
+
+
     public bool DeleteTile(Vector3 spawnLocation)
     {
         if (!(_worldManager.Hexagons.ContainsKey(spawnLocation))) return false;
@@ -41,8 +43,18 @@ public class WorldBuilder : MonoBehaviour
         return true;
     }
 
-    private IEnumerator TilePopupAnimation()
+    private IEnumerator TilePopupAnimation(GameObject tile)
     {
-        yield return null;
+        Vector3 targetPosition = tile.transform.position;
+        tile.transform.position = targetPosition - new Vector3(0, 1, 0);
+
+        float progress = 0;
+        while (progress < 1)
+        {
+            progress += Time.deltaTime * popupAnimationSpeed;
+            progress = progress > 1 ? 1 : progress;
+            tile.transform.position = Vector3.Slerp(tile.transform.position, targetPosition, progress);
+            yield return null;
+        }
     }
 }

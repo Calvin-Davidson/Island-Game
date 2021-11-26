@@ -64,6 +64,15 @@ public class WorldManager : MonoBehaviour
 
         return false;
     }
+
+    public bool ExpandIsland(int tiles)
+    {
+        for (int i = 0; i < tiles; i++)
+        {
+            if (ExpandIsland() == false) return false;
+        }
+        return true;
+    }
     
     public static WorldManager Instance
     {
