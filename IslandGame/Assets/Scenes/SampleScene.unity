@@ -4200,6 +4200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37093c04385459741a24ddcc05b8ad25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popupAnimationSpeed: 0.15
 --- !u!1 &760349336
 GameObject:
   m_ObjectHideFlags: 0
