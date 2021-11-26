@@ -4171,6 +4171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c248f515e942e4da25c645c8e4db01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grassTiles: {fileID: 11400000, guid: 0f1a944a39c2a064499d4e3cf7b4eb94, type: 2}
+  sandTiles: {fileID: 0}
 --- !u!4 &727539144
 Transform:
   m_ObjectHideFlags: 0

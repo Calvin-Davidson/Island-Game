@@ -8,8 +8,10 @@ public class WorldManager : MonoBehaviour
 {
     private static WorldManager _instance;
 
-    private Dictionary<Vector2, GameObject> _hexagons = new Dictionary<Vector2, GameObject>();
+    [SerializeField] private TileSetContainer grassTiles;
+    [SerializeField] private TileSetContainer sandTiles;
 
+    private Dictionary<Vector2, GameObject> _hexagons = new Dictionary<Vector2, GameObject>();
 
     private void Awake()
     {
@@ -31,11 +33,9 @@ public class WorldManager : MonoBehaviour
     public bool SpawnTile(Vector2 tileToSpawn)
     {
         if (_hexagons.ContainsKey(tileToSpawn)) return false;
-
-        Mesh hexagonMesh = HexagonMeshBuilder.GetHexagonMesh(1, 1);
-        GameObject hexTile = new GameObject("Hexagon", typeof(MeshRenderer), typeof(MeshFilter));
+        
+        GameObject hexTile = Instantiate(grassTiles.GetRandom());
         hexTile.transform.position = new Vector3(tileToSpawn.x, 0, tileToSpawn.y);
-        hexTile.GetComponent<MeshFilter>().mesh = hexagonMesh;
         _hexagons.Add(tileToSpawn, hexTile);
         return true;
     }
@@ -48,6 +48,7 @@ public class WorldManager : MonoBehaviour
     public bool ExpandIsland()
     {
         Vector2[] keys = _hexagons.Keys.ToArray();
+        keys = keys.Shuffle();
         // shuffle
         foreach (var hexagonsKey in keys)
         {
