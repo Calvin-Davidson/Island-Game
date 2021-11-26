@@ -11,7 +11,7 @@ public class HexagonMeshBuilder
             vertices = GetVertices(width, height),
             triangles = GetTriangles(),
             uv = GetUvs(),
-            //normals = GetNormals()
+            normals = GetNormals()
         };
 
         return mesh;

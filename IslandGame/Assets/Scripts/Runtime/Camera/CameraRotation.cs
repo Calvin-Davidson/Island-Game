@@ -15,17 +15,10 @@ public class CameraRotation : MonoBehaviour
         _transform = GetComponent<Transform>();
     }
 
-    public void RotateToLeft()
+    public void Rotate(Vector2 input)
     {
         Vector3 currentRotation = cameraParent.rotation.eulerAngles;
-        currentRotation.y += rotationSpeed * Time.deltaTime;
-        cameraParent.rotation = Quaternion.Euler(currentRotation);
-    }
-
-    public void RotateToRight()
-    {
-        Vector3 currentRotation = cameraParent.rotation.eulerAngles;
-        currentRotation.y -= rotationSpeed * Time.deltaTime;
-        cameraParent.rotation = Quaternion.Euler(currentRotation);        
+        currentRotation.y -= rotationSpeed * Time.deltaTime * input.x;
+        cameraParent.rotation = Quaternion.Euler(currentRotation);             
     }
 }

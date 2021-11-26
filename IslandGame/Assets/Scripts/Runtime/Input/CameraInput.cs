@@ -9,6 +9,8 @@ public class CameraInput : MonoBehaviour
     [SerializeField] private CameraZoom cameraZoom;
     [SerializeField] private CameraRotation cameraRotation;
 
+    private PinchDetection _pinchDetection;
+
     private bool _isPrimaryHolding = false;
     private void Awake()
     {
@@ -19,18 +21,18 @@ public class CameraInput : MonoBehaviour
 
     private void InstantiatePinchDetection()
     {
-        PinchDetection pinchDetection = GetComponent<PinchDetection>();
-        if (pinchDetection == null)
+        _pinchDetection = GetComponent<PinchDetection>();
+        if (_pinchDetection == null)
         {
-            pinchDetection = gameObject.AddComponent<PinchDetection>();
+            _pinchDetection = gameObject.AddComponent<PinchDetection>();
         }
-        pinchDetection.Brain = brain;
+        _pinchDetection.Brain = brain;
         
-        brain.InputActionAsset["SecondaryTouchContact"].started += _ => pinchDetection.ZoomStart();
-        brain.InputActionAsset["SecondaryTouchContact"].canceled += _ => pinchDetection.ZoomEnd();
+        brain.InputActionAsset["SecondaryTouchContact"].started += _ => _pinchDetection.ZoomStart();
+        brain.InputActionAsset["SecondaryTouchContact"].canceled += _ => _pinchDetection.ZoomEnd();
 
-        pinchDetection.onPinch += cameraZoom.ZoomOut;
-        pinchDetection.onStretch += cameraZoom.ZoomIn;
+        _pinchDetection.onPinch += cameraZoom.ZoomOut;
+        _pinchDetection.onStretch += cameraZoom.ZoomIn;
     }
     private void InstantiateMouseScrollDetection()
     {
@@ -55,17 +57,11 @@ public class CameraInput : MonoBehaviour
         brain.InputActionAsset["PrimaryFingerDelta"].performed += context =>
         {
             if (!_isPrimaryHolding) return;
+            if (_pinchDetection.IsDetectingZoom) return;
            
             Vector2 direction = context.ReadValue<Vector2>();
 
-            if (direction.x > 0)
-            {
-                cameraRotation.RotateToRight();
-            }
-            else if (direction.x < 0)
-            {
-                cameraRotation.RotateToLeft();
-            }
+            cameraRotation.Rotate(direction);
         };
     }
     

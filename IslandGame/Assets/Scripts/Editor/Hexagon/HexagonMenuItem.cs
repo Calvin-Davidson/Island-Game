@@ -10,7 +10,14 @@ public class HexagonMenuItem : EditorWindow
     public static void GenerateHexagon()
     {
         HexagonMesh hexagonMesh = new HexagonMesh();
-        GameObject gameObject = new GameObject("Hexagon", typeof(MeshRenderer), typeof(MeshFilter));
-        gameObject.GetComponent<MeshFilter>().mesh = hexagonMesh.Mesh;
+        GameObject gameObject = new GameObject("Hexagon", typeof(MeshRenderer), typeof(MeshFilter), typeof(MeshCollider));
+        
+        MeshFilter meshFilter = gameObject.GetComponent<MeshFilter>();
+
+        MeshCollider meshCollider = gameObject.GetComponent<MeshCollider>();
+        meshCollider.sharedMesh = hexagonMesh.Mesh;
+        meshCollider.convex = true;
+
+        meshFilter.mesh = hexagonMesh.Mesh;
     }
 }
