@@ -12,6 +12,7 @@ public class WorldBuilder : MonoBehaviour
     [SerializeField] private float popupAnimationSpeed;
     [SerializeField] private MeshRenderer worldRenderer;
     [SerializeField] private MeshFilter worldFilter;
+    [SerializeField] private MeshCollider meshCollider;
 
     private Queue<Func<Task>> _meshCombineQueue = new Queue<Func<Task>>();
     private Coroutine _queueRunner;
@@ -20,6 +21,8 @@ public class WorldBuilder : MonoBehaviour
     private void Awake()
     {
         _worldManager = GetComponent<WorldManager>();
+        worldFilter.mesh = new Mesh();
+        meshCollider.sharedMesh = worldFilter.sharedMesh;
     }
 
     public GameObject CreateTile(Vector2 spawnLocation)
@@ -169,9 +172,20 @@ public class WorldBuilder : MonoBehaviour
         worldFilter.mesh.vertices = vertices.ToArray();
         worldFilter.mesh.triangles = triangles.ToArray();
         worldFilter.mesh.normals = normals.ToArray();
+        meshCollider.sharedMesh = worldFilter.sharedMesh;
+        
+        worldFilter.mesh.Optimize();
         
         Destroy(tile.transform.Find("Grass").gameObject);
         Destroy(tile.transform.Find("Dirt").gameObject);
+    }
+
+    private async Task RebuildWorld()
+    {
+        await Task.Run(() =>
+        {
+            
+        });
     }
 
     private IEnumerator TaskQueueRunner()
@@ -184,6 +198,12 @@ public class WorldBuilder : MonoBehaviour
             {
                 yield return null;
             }
+        }
+
+        var worldRebuildTask = RebuildWorld();
+        while (!worldRebuildTask.IsCompleted)
+        {
+            yield return null;
         }
 
         _queueRunner = null;
