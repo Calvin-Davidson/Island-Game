@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1470632212751852037}
   - component: {fileID: 7270315711842286674}
   m_Layer: 0
-  m_Name: Hexagon
+  m_Name: Sand
   m_TagString: HexagonTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

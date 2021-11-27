@@ -123,10 +123,10 @@ public class WorldBuilder : MonoBehaviour
                 vertices.IndexOf(vert1), vertices.IndexOf(vert2), vertices.IndexOf(vert4),
                 vertices.IndexOf(vert3), vertices.IndexOf(vert4), vertices.IndexOf(vert2),
                 // bottom plane
-                vertices.IndexOf(vert11), vertices.IndexOf(vert7), vertices.IndexOf(vert6),
-                vertices.IndexOf(vert7), vertices.IndexOf(vert11), vertices.IndexOf(vert10),
-                vertices.IndexOf(vert10), vertices.IndexOf(vert9), vertices.IndexOf(vert7),
-                vertices.IndexOf(vert8), vertices.IndexOf(vert10), vertices.IndexOf(vert9),
+                // vertices.IndexOf(vert11), vertices.IndexOf(vert7), vertices.IndexOf(vert6),
+                // vertices.IndexOf(vert7), vertices.IndexOf(vert11), vertices.IndexOf(vert10),
+                // vertices.IndexOf(vert10), vertices.IndexOf(vert9), vertices.IndexOf(vert7),
+                // vertices.IndexOf(vert8), vertices.IndexOf(vert10), vertices.IndexOf(vert9),
                 // side 0
                 vertices.IndexOf(vert7), vertices.IndexOf(vert1), vertices.IndexOf(vert0),
                 vertices.IndexOf(vert0), vertices.IndexOf(vert6), vertices.IndexOf(vert7),
@@ -170,7 +170,8 @@ public class WorldBuilder : MonoBehaviour
         worldFilter.mesh.triangles = triangles.ToArray();
         worldFilter.mesh.normals = normals.ToArray();
         
-        Destroy(tile);
+        Destroy(tile.transform.Find("Grass").gameObject);
+        Destroy(tile.transform.Find("Dirt").gameObject);
     }
 
     private IEnumerator TaskQueueRunner()
