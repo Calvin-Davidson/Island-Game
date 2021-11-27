@@ -96,24 +96,24 @@ public class WorldBuilder : MonoBehaviour
             Vector3 vert9 = new Vector3(width + tilePos.x, -height / 2 - offsetY, 0 + tilePos.z);
             Vector3 vert10 = new Vector3(width / 2 + tilePos.x, -height / 2 - offsetY, -width + tilePos.z);
             Vector3 vert11 = new Vector3(-width / 2 + tilePos.x, -height / 2 - offsetY, -width + tilePos.z);
-
+            
             vertices.AddRange(new[]
-            {
-                //top plane
-                vert0,
-                vert1,
-                vert2,
-                vert3,
-                vert4,
-                vert5,
-                //bottom plane
-                vert6,
-                vert7,
-                vert8,
-                vert9,
-                vert10,
-                vert11
-            });
+             {
+                 //top plane
+                 vert0,
+                 vert1,
+                 vert2,
+                 vert3,
+                 vert4,
+                 vert5,
+                 //bottom plane
+                 vert6,
+                 vert7,
+                 vert8,
+                 vert9,
+                 vert10,
+                 vert11
+             });
 
             triangles.AddRange(new[]
             {
@@ -146,24 +146,25 @@ public class WorldBuilder : MonoBehaviour
                 vertices.IndexOf(vert6), vertices.IndexOf(vert0), vertices.IndexOf(vert5),
                 vertices.IndexOf(vert5), vertices.IndexOf(vert11), vertices.IndexOf(vert6)
             });
+            
+            normals.AddRange(new [] {
+                //top plane
+                Vector3.up,
+                Vector3.up,
+                Vector3.up,
+                Vector3.up,
+                Vector3.up,
+                Vector3.up,
+                //bottom plane
+                Vector3.up,
+                Vector3.up,
+                Vector3.up,
+                Vector3.up,
+                Vector3.up,
+                Vector3.up
+            });
         });
         
-        normals.AddRange(new [] {
-            //top plane
-            Vector3.up,
-            Vector3.up,
-            Vector3.up,
-            Vector3.up,
-            Vector3.up,
-            Vector3.up,
-            //bottom plane
-            Vector3.up,
-            Vector3.up,
-            Vector3.up,
-            Vector3.up,
-            Vector3.up,
-            Vector3.up
-        });
 
         worldFilter.mesh.vertices = vertices.ToArray();
         worldFilter.mesh.triangles = triangles.ToArray();

@@ -26,4 +26,20 @@ public static class ListExtensions
 
         return list;
     }
+
+    public static List<T> AddIfNotExist<T>(this List<T> list, T item)
+    {
+        if (!list.Contains(item)) list.Add(item);
+        return list;
+    }
+
+    public static bool AddIfNotExistBool<T>(this List<T> list, T item)
+    {
+        if (!list.Contains(item))
+        {
+            list.Add(item);
+            return true;
+        }
+        return false;
+    }
 }
