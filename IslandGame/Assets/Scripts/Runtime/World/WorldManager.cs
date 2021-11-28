@@ -38,6 +38,7 @@ public class WorldManager : MonoBehaviour
     {
         return !_hexagons.ContainsKey(position);
     }
+    
 
     public bool ExpandIsland()
     {
@@ -64,7 +65,8 @@ public class WorldManager : MonoBehaviour
 
         return false;
     }
-
+    
+    
     public bool ExpandIsland(int tiles)
     {
         for (int i = 0; i < tiles; i++)
@@ -96,6 +98,15 @@ public class WorldManager : MonoBehaviour
         return _hexagons.OrderBy(pair => Vector2.Distance(pair.Key, vector2)).FirstOrDefault().Value;
     }
 
+
+    public Vector2 GetTopCoords(Vector2 currentTile) => currentTile + new Vector2(0, 2);
+    public Vector2 GetTopLeftCoords(Vector2 currentTile) => currentTile +  new Vector2(-1.5f, 1);
+    public Vector2 GetTopRightCoords(Vector2 currentTile) => new Vector2(1.5f, 1);
+    public Vector2 GetBottomCoords(Vector2 currentTile) => currentTile + new Vector2(0, -2);
+    public Vector2 GetBottomLeftCoords(Vector2 currentTile) => currentTile + new Vector2(-1.5f, -1f);
+    public Vector2 GetBottomRightCoords(Vector2 currentTile) => currentTile + new Vector2(1.5f, 1);
+
+    
     public TileSetContainer GrassTiles => grassTiles;
 
     public TileSetContainer SandTiles => sandTiles;

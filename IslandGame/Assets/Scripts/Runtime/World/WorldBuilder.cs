@@ -117,7 +117,8 @@ public class WorldBuilder : MonoBehaviour
                  vert10,
                  vert11
              });
-
+            
+            
             triangles.AddRange(new[]
             {
                 // top plane
