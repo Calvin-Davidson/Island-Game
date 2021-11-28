@@ -10,9 +10,16 @@ using UnityEngine;
 public class WorldBuilder : MonoBehaviour
 {
     [SerializeField] private float popupAnimationSpeed;
-    [SerializeField] private MeshRenderer worldRenderer;
-    [SerializeField] private MeshFilter worldFilter;
-    [SerializeField] private MeshCollider meshCollider;
+
+    [SerializeField, Space] private MeshFilter grassTopFilter;
+    [SerializeField] private MeshCollider grassTopCollider;
+    [SerializeField] private MeshFilter grassWallsFilter;
+    [SerializeField] private MeshCollider grassWallsCollider;
+
+    [SerializeField, Space] private MeshFilter sandTopFilter;
+    [SerializeField] private MeshCollider sandTopCollider;
+    [SerializeField] private MeshFilter sandWallsFilter;
+    [SerializeField] private MeshCollider sandWallsCollider;
 
     private Queue<Func<Task>> _meshCombineQueue = new Queue<Func<Task>>();
     private Coroutine _queueRunner;
@@ -21,8 +28,17 @@ public class WorldBuilder : MonoBehaviour
     private void Awake()
     {
         _worldManager = GetComponent<WorldManager>();
-        worldFilter.mesh = new Mesh();
-        meshCollider.sharedMesh = worldFilter.sharedMesh;
+        grassTopFilter.mesh = new Mesh();
+        grassWallsFilter.mesh = new Mesh();
+        sandTopFilter.mesh = new Mesh();
+        sandWallsFilter.mesh = new Mesh();
+
+
+        grassTopCollider.sharedMesh = grassTopFilter.sharedMesh;
+        grassWallsCollider.sharedMesh = grassWallsCollider.sharedMesh;
+
+        sandTopCollider.sharedMesh = sandTopFilter.sharedMesh;
+        sandWallsCollider.sharedMesh = sandWallsCollider.sharedMesh;
     }
 
     public GameObject CreateTile(Vector2 spawnLocation)
@@ -67,58 +83,123 @@ public class WorldBuilder : MonoBehaviour
             yield return null;
         }
 
-        _meshCombineQueue.Enqueue(() => CombineMesh(worldFilter.mesh, tile));
+        _meshCombineQueue.Enqueue(() => CombineMesh(tile));
         _queueRunner ??= StartCoroutine(TaskQueueRunner());
     }
-    
-    private async Task CombineMesh(Mesh parentMesh, GameObject tile)
-    {
-        Vector3 tilePos = tile.transform.position;
 
-        Mesh worldMesh = worldFilter.mesh;
-        List<int> triangles = new List<int>(worldMesh.triangles);
-        List<Vector3> vertices = new List<Vector3>(worldMesh.vertices);
-        List<Vector3> normals = new List<Vector3>(worldMesh.normals);
+    private async Task CombineMesh(GameObject tile)
+    {
+        await AddHexagonToMesh(grassTopFilter.mesh, new Vector2(1, 1), tile.transform.position);
+        grassTopFilter.mesh.Optimize();
+        
+        grassTopCollider.sharedMesh = grassTopFilter.mesh;
+        Destroy(tile.transform.Find("Grass").gameObject);
+        Destroy(tile.transform.Find("Dirt").gameObject);
+    }
+
+    private async Task AddHexagonToMesh(Mesh parentMesh, Vector2 size, Vector3 position)
+    {
+        List<int> triangles = new List<int>(parentMesh.triangles);
+        List<Vector3> vertices = new List<Vector3>(parentMesh.vertices);
+        List<Vector3> normals = new List<Vector3>(parentMesh.normals);
 
         await Task.Run(() =>
         {
-            float width = 1;
-            float height = 1;
+            float width = size.x;
+            float height = size.y;
 
             float offsetY = 5.4f;
-            
-            Vector3 vert0 = new Vector3(-width + tilePos.x, height / 2 - offsetY, +tilePos.z);
-            Vector3 vert1 = new Vector3(-width / 2 + tilePos.x, height / 2 - offsetY, width + tilePos.z);
-            Vector3 vert2 = new Vector3(width / 2 + tilePos.x, height / 2 - offsetY, width + tilePos.z);
-            Vector3 vert3 = new Vector3(width + tilePos.x, height / 2 - offsetY, 0 + tilePos.z);
-            Vector3 vert4 = new Vector3(width / 2 + tilePos.x, height / 2 - offsetY, -width + tilePos.z);
-            Vector3 vert5 = new Vector3(-width / 2 + tilePos.x, height / 2 - offsetY, -width + tilePos.z);
-            Vector3 vert6 = new Vector3(-width + tilePos.x, -height / 2 - offsetY, 0 + tilePos.z);
-            Vector3 vert7 = new Vector3(-width / 2 + tilePos.x, -height / 2 - offsetY, width + tilePos.z);
-            Vector3 vert8 = new Vector3(width / 2 + tilePos.x, -height / 2 - offsetY, width + tilePos.z);
-            Vector3 vert9 = new Vector3(width + tilePos.x, -height / 2 - offsetY, 0 + tilePos.z);
-            Vector3 vert10 = new Vector3(width / 2 + tilePos.x, -height / 2 - offsetY, -width + tilePos.z);
-            Vector3 vert11 = new Vector3(-width / 2 + tilePos.x, -height / 2 - offsetY, -width + tilePos.z);
-            
+
+            Vector3 vert0 = new Vector3(-width + position.x, height / 2 - offsetY, 0 + position.z);
+            Vector3 vert1 = new Vector3(-width / 2 + position.x, height / 2 - offsetY, width + position.z);
+            Vector3 vert2 = new Vector3(width / 2 + position.x, height / 2 - offsetY, width + position.z);
+            Vector3 vert3 = new Vector3(width + position.x, height / 2 - offsetY, 0 + position.z);
+            Vector3 vert4 = new Vector3(width / 2 + position.x, height / 2 - offsetY, -width + position.z);
+            Vector3 vert5 = new Vector3(-width / 2 + position.x, height / 2 - offsetY, -width + position.z);
+            Vector3 vert6 = new Vector3(-width + position.x, -height / 2 - offsetY, 0 + position.z);
+            Vector3 vert7 = new Vector3(-width / 2 + position.x, -height / 2 - offsetY, width + position.z);
+            Vector3 vert8 = new Vector3(width / 2 + position.x, -height / 2 - offsetY, width + position.z);
+            Vector3 vert9 = new Vector3(width + position.x, -height / 2 - offsetY, 0 + position.z);
+            Vector3 vert10 = new Vector3(width / 2 + position.x, -height / 2 - offsetY, -width + position.z);
+            Vector3 vert11 = new Vector3(-width / 2 + position.x, -height / 2 - offsetY, -width + position.z);
+
             vertices.AddRange(new[]
-             {
-                 //top plane
-                 vert0,
-                 vert1,
-                 vert2,
-                 vert3,
-                 vert4,
-                 vert5,
-                 //bottom plane
-                 vert6,
-                 vert7,
-                 vert8,
-                 vert9,
-                 vert10,
-                 vert11
-             });
-            
-            
+            {
+                //top plane
+                vert0,
+                vert1,
+                vert2,
+                vert3,
+                vert4,
+                vert5,
+                //bottom plane
+                vert6,
+                vert7,
+                vert8,
+                vert9,
+                vert10,
+                vert11
+            });
+
+
+            Vector2 position2d = new Vector2(position.x, position.z);
+            if (_worldManager.IsEmptyTile(_worldManager.GetTopLeftCoords(position2d)))
+            {
+                triangles.AddRange(new[]
+                {
+                    vertices.IndexOf(vert7), vertices.IndexOf(vert1), vertices.IndexOf(vert0),
+                    vertices.IndexOf(vert0), vertices.IndexOf(vert6), vertices.IndexOf(vert7),
+                });
+            }
+
+            if (_worldManager.IsEmptyTile(_worldManager.GetTopCoords(position2d)))
+            {
+                triangles.AddRange(new[]
+                {
+                    vertices.IndexOf(vert8), vertices.IndexOf(vert2), vertices.IndexOf(vert1),
+                    vertices.IndexOf(vert1), vertices.IndexOf(vert7), vertices.IndexOf(vert8),
+                });
+            }
+
+            if (_worldManager.IsEmptyTile(_worldManager.GetTopRightCoords(position2d)))
+            {
+                triangles.AddRange(new[]
+                {
+                    vertices.IndexOf(vert9), vertices.IndexOf(vert3), vertices.IndexOf(vert2),
+                    vertices.IndexOf(vert2), vertices.IndexOf(vert8), vertices.IndexOf(vert9),
+                });
+            }
+
+
+            if (_worldManager.IsEmptyTile(_worldManager.GetBottomLeftCoords(position2d)))
+            {
+                triangles.AddRange(new[]
+                {
+                    vertices.IndexOf(vert6), vertices.IndexOf(vert0), vertices.IndexOf(vert5),
+                    vertices.IndexOf(vert5), vertices.IndexOf(vert11), vertices.IndexOf(vert6)
+                });
+            }
+
+
+            if (_worldManager.IsEmptyTile(_worldManager.GetBottomCoords(position2d)))
+            {
+                triangles.AddRange(new[]
+                {
+                    vertices.IndexOf(vert11), vertices.IndexOf(vert5), vertices.IndexOf(vert4),
+                    vertices.IndexOf(vert4), vertices.IndexOf(vert10), vertices.IndexOf(vert11),
+                });
+            }
+
+            if (_worldManager.IsEmptyTile(_worldManager.GetBottomRightCoords(position2d)))
+            {
+                triangles.AddRange(new[]
+                {
+                    vertices.IndexOf(vert10), vertices.IndexOf(vert4), vertices.IndexOf(vert3),
+                    vertices.IndexOf(vert3), vertices.IndexOf(vert9), vertices.IndexOf(vert10),
+                });
+            }
+
+
             triangles.AddRange(new[]
             {
                 // top plane
@@ -126,32 +207,10 @@ public class WorldBuilder : MonoBehaviour
                 vertices.IndexOf(vert4), vertices.IndexOf(vert5), vertices.IndexOf(vert1),
                 vertices.IndexOf(vert1), vertices.IndexOf(vert2), vertices.IndexOf(vert4),
                 vertices.IndexOf(vert3), vertices.IndexOf(vert4), vertices.IndexOf(vert2),
-                // bottom plane
-                // vertices.IndexOf(vert11), vertices.IndexOf(vert7), vertices.IndexOf(vert6),
-                // vertices.IndexOf(vert7), vertices.IndexOf(vert11), vertices.IndexOf(vert10),
-                // vertices.IndexOf(vert10), vertices.IndexOf(vert9), vertices.IndexOf(vert7),
-                // vertices.IndexOf(vert8), vertices.IndexOf(vert10), vertices.IndexOf(vert9),
-                // side 0
-                vertices.IndexOf(vert7), vertices.IndexOf(vert1), vertices.IndexOf(vert0),
-                vertices.IndexOf(vert0), vertices.IndexOf(vert6), vertices.IndexOf(vert7),
-                // side 1
-                vertices.IndexOf(vert8), vertices.IndexOf(vert2), vertices.IndexOf(vert1),
-                vertices.IndexOf(vert1), vertices.IndexOf(vert7), vertices.IndexOf(vert8),
-                // side 2
-                vertices.IndexOf(vert9), vertices.IndexOf(vert3), vertices.IndexOf(vert2),
-                vertices.IndexOf(vert2), vertices.IndexOf(vert8), vertices.IndexOf(vert9),
-                // side 3
-                vertices.IndexOf(vert10), vertices.IndexOf(vert4), vertices.IndexOf(vert3),
-                vertices.IndexOf(vert3), vertices.IndexOf(vert9), vertices.IndexOf(vert10),
-                // side 4
-                vertices.IndexOf(vert11), vertices.IndexOf(vert5), vertices.IndexOf(vert4),
-                vertices.IndexOf(vert4), vertices.IndexOf(vert10), vertices.IndexOf(vert11),
-                // side 5
-                vertices.IndexOf(vert6), vertices.IndexOf(vert0), vertices.IndexOf(vert5),
-                vertices.IndexOf(vert5), vertices.IndexOf(vert11), vertices.IndexOf(vert6)
             });
-            
-            normals.AddRange(new [] {
+
+            normals.AddRange(new[]
+            {
                 //top plane
                 Vector3.up,
                 Vector3.up,
@@ -168,27 +227,15 @@ public class WorldBuilder : MonoBehaviour
                 Vector3.up
             });
         });
-        
 
-        worldFilter.mesh.vertices = vertices.ToArray();
-        worldFilter.mesh.triangles = triangles.ToArray();
-        worldFilter.mesh.normals = normals.ToArray();
-        meshCollider.sharedMesh = worldFilter.sharedMesh;
-        
-        worldFilter.mesh.Optimize();
-        
-        Destroy(tile.transform.Find("Grass").gameObject);
-        Destroy(tile.transform.Find("Dirt").gameObject);
+
+        parentMesh.vertices = vertices.ToArray();
+        parentMesh.triangles = triangles.ToArray();
+        parentMesh.normals = normals.ToArray();
+
+        grassTopFilter.mesh.Optimize();
     }
-
-    private async Task RebuildWorld()
-    {
-        await Task.Run(() =>
-        {
-            
-        });
-    }
-
+    
     private IEnumerator TaskQueueRunner()
     {
         while (_meshCombineQueue.Count > 0)
@@ -200,13 +247,6 @@ public class WorldBuilder : MonoBehaviour
                 yield return null;
             }
         }
-
-        var worldRebuildTask = RebuildWorld();
-        while (!worldRebuildTask.IsCompleted)
-        {
-            yield return null;
-        }
-
         _queueRunner = null;
     }
 }

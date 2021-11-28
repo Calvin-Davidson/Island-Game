@@ -47,13 +47,13 @@ public class WorldManager : MonoBehaviour
         // shuffle
         foreach (var hexagonsKey in keys)
         {
-            Vector2 leftBottom = hexagonsKey + new Vector2(-1.5f, -1f);
-            Vector2 rightBottom = hexagonsKey + new Vector2(1.5f, 1);
-            Vector2 bottom = hexagonsKey + new Vector2(0, -2);
+            Vector2 leftBottom = GetBottomLeftCoords(hexagonsKey);
+            Vector2 rightBottom = GetBottomRightCoords(hexagonsKey);
+            Vector2 bottom = GetBottomCoords(hexagonsKey);
 
-            Vector2 leftTop = hexagonsKey + new Vector2(-1.5f, 1);
-            Vector2 rightTop = hexagonsKey + new Vector2(1.5f, 1);
-            Vector2 top = hexagonsKey + new Vector2(0, 2);
+            Vector2 leftTop = GetTopLeftCoords(hexagonsKey);
+            Vector2 rightTop = GetTopRightCoords(hexagonsKey);
+            Vector2 top = GetTopCoords(hexagonsKey);
 
             if (_worldBuilder.TryCreateTile(leftBottom)) return true;
             if (_worldBuilder.TryCreateTile(rightBottom)) return true;
@@ -101,10 +101,10 @@ public class WorldManager : MonoBehaviour
 
     public Vector2 GetTopCoords(Vector2 currentTile) => currentTile + new Vector2(0, 2);
     public Vector2 GetTopLeftCoords(Vector2 currentTile) => currentTile +  new Vector2(-1.5f, 1);
-    public Vector2 GetTopRightCoords(Vector2 currentTile) => new Vector2(1.5f, 1);
+    public Vector2 GetTopRightCoords(Vector2 currentTile) => currentTile + new Vector2(1.5f, 1);
     public Vector2 GetBottomCoords(Vector2 currentTile) => currentTile + new Vector2(0, -2);
     public Vector2 GetBottomLeftCoords(Vector2 currentTile) => currentTile + new Vector2(-1.5f, -1f);
-    public Vector2 GetBottomRightCoords(Vector2 currentTile) => currentTile + new Vector2(1.5f, 1);
+    public Vector2 GetBottomRightCoords(Vector2 currentTile) => currentTile + new Vector2(1.5f, -1f);
 
     
     public TileSetContainer GrassTiles => grassTiles;
