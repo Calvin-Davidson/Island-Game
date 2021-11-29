@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Toolbox.Utility;
 using UnityEditor;
 using UnityEngine;
 
@@ -20,6 +21,9 @@ public class WorldBuilder : MonoBehaviour
     [SerializeField] private MeshCollider sandTopCollider;
     [SerializeField] private MeshFilter sandWallsFilter;
     [SerializeField] private MeshCollider sandWallsCollider;
+
+    [SerializeField, Space] private GameObject treeRenderer;
+
 
     private Queue<Func<Task>> _meshCombineQueue = new Queue<Func<Task>>();
     private Coroutine _queueRunner;
@@ -88,10 +92,24 @@ public class WorldBuilder : MonoBehaviour
     {
         await AddHexagonToMesh(grassTopFilter.mesh, new Vector2(1, 1), tile.transform.position);
         grassTopFilter.mesh.Optimize();
-        
+
         grassTopCollider.sharedMesh = grassTopFilter.mesh;
         Destroy(tile.transform.Find("Grass").gameObject);
         Destroy(tile.transform.Find("Dirt").gameObject);
+
+        CombineTrees(tile);
+    }
+
+    private void CombineTrees(GameObject tile)
+    {
+        var meshFilters = tile.GetComponentsInChildren<MeshFilter>();
+
+            meshFilters = meshFilters.ToList().FindAll(filter => filter.sharedMesh.name == "tree").ToArray();
+
+            GameObject[] objects = new GameObject[meshFilters.Length];
+            for (var i = meshFilters.Length - 1; i >= 0; i--) objects[i] = meshFilters[i].gameObject;
+
+            MyMeshUtility.CombineMeshes(treeRenderer, objects.ToList());
     }
 
     private async Task AddHexagonToMesh(Mesh parentMesh, Vector2 size, Vector3 position)
@@ -232,7 +250,7 @@ public class WorldBuilder : MonoBehaviour
 
         grassTopFilter.mesh.Optimize();
     }
-    
+
     private IEnumerator TaskQueueRunner()
     {
         while (_meshCombineQueue.Count > 0)
@@ -244,6 +262,7 @@ public class WorldBuilder : MonoBehaviour
                 yield return null;
             }
         }
+
         _queueRunner = null;
     }
 }
