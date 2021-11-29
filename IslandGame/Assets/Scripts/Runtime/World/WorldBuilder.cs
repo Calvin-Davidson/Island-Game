@@ -62,11 +62,8 @@ public class WorldBuilder : MonoBehaviour
 
     public bool DeleteTile(Vector3 spawnLocation)
     {
-        if (!(_worldManager.Hexagons.ContainsKey(spawnLocation))) return false;
-
-        GameObject obj = _worldManager.Hexagons[new Vector2(spawnLocation.x, spawnLocation.z)];
-        GameObject.Destroy(obj);
-        return true;
+        throw new NotImplementedException("The DeleteTile methode has not been implemented!");
+        return false;
     }
 
     private IEnumerator TilePopupAnimation(GameObject tile)
