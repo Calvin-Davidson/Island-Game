@@ -73,6 +73,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""CameraDelta"",
+                    ""type"": ""Value"",
+                    ""id"": ""ca0626b1-dfe2-4ffc-baf5-dae9598a8055"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -185,6 +193,72 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""SecondaryFingerDelta"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Keyboard delta"",
+                    ""id"": ""d06e782d-a097-4bbd-8036-535033294611"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDelta"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""59321ccf-a91f-4794-ac55-9a23059371b1"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDelta"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""8a92e6fb-41bf-4ec4-8d43-2b41d91e3302"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDelta"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""1d456e94-e2bf-4f38-b43b-6fc0863cf631"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDelta"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""886acee5-a3be-4696-b943-ffabeaa51df3"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDelta"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""df27eeb6-2bb0-4f73-9c9f-74809b8b1c75"",
+                    ""path"": ""<Touchscreen>/touch0/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraDelta"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -228,6 +302,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         m_Camera_SecondaryTouchContact = m_Camera.FindAction("SecondaryTouchContact", throwIfNotFound: true);
         m_Camera_MouseScroll = m_Camera.FindAction("MouseScroll", throwIfNotFound: true);
         m_Camera_SecondaryFingerDelta = m_Camera.FindAction("SecondaryFingerDelta", throwIfNotFound: true);
+        m_Camera_CameraDelta = m_Camera.FindAction("CameraDelta", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -284,6 +359,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputAction m_Camera_SecondaryTouchContact;
     private readonly InputAction m_Camera_MouseScroll;
     private readonly InputAction m_Camera_SecondaryFingerDelta;
+    private readonly InputAction m_Camera_CameraDelta;
     public struct CameraActions
     {
         private @InputMaster m_Wrapper;
@@ -295,6 +371,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         public InputAction @SecondaryTouchContact => m_Wrapper.m_Camera_SecondaryTouchContact;
         public InputAction @MouseScroll => m_Wrapper.m_Camera_MouseScroll;
         public InputAction @SecondaryFingerDelta => m_Wrapper.m_Camera_SecondaryFingerDelta;
+        public InputAction @CameraDelta => m_Wrapper.m_Camera_CameraDelta;
         public InputActionMap Get() { return m_Wrapper.m_Camera; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -325,6 +402,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @SecondaryFingerDelta.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerDelta;
                 @SecondaryFingerDelta.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerDelta;
                 @SecondaryFingerDelta.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnSecondaryFingerDelta;
+                @CameraDelta.started -= m_Wrapper.m_CameraActionsCallbackInterface.OnCameraDelta;
+                @CameraDelta.performed -= m_Wrapper.m_CameraActionsCallbackInterface.OnCameraDelta;
+                @CameraDelta.canceled -= m_Wrapper.m_CameraActionsCallbackInterface.OnCameraDelta;
             }
             m_Wrapper.m_CameraActionsCallbackInterface = instance;
             if (instance != null)
@@ -350,6 +430,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @SecondaryFingerDelta.started += instance.OnSecondaryFingerDelta;
                 @SecondaryFingerDelta.performed += instance.OnSecondaryFingerDelta;
                 @SecondaryFingerDelta.canceled += instance.OnSecondaryFingerDelta;
+                @CameraDelta.started += instance.OnCameraDelta;
+                @CameraDelta.performed += instance.OnCameraDelta;
+                @CameraDelta.canceled += instance.OnCameraDelta;
             }
         }
     }
@@ -381,5 +464,6 @@ public class @InputMaster : IInputActionCollection, IDisposable
         void OnSecondaryTouchContact(InputAction.CallbackContext context);
         void OnMouseScroll(InputAction.CallbackContext context);
         void OnSecondaryFingerDelta(InputAction.CallbackContext context);
+        void OnCameraDelta(InputAction.CallbackContext context);
     }
 }
