@@ -6,33 +6,33 @@ using UnityEngine;
 
 public class PlaceHandler : MonoBehaviour
 {
-    [SerializeField] private GameObject selectedObject;
+    [SerializeField] private Placeable selectedPlaceable;
     [SerializeField] private TileClickHandler tileClickHandler;
-
+    [SerializeField] private PlaceableParser placeableParser;
+    
     private void Awake()
     {
         tileClickHandler.OnClickEmptyTile.AddListener(SpawnSelected);
     }
 
-    public GameObject SelectedObject
+    public Placeable SelectedPlaceable
     {
-        get => selectedObject;
+        get => selectedPlaceable;
         set
         {
-            if (value == null) tileClickHandler.OnClickEmptyTile.RemoveListener(SpawnSelected);
-            if (tileClickHandler == null && value != null) tileClickHandler.OnClickEmptyTile.AddListener(SpawnSelected);
-            selectedObject = value;
+            if (value == Placeable.Empty) tileClickHandler.OnClickEmptyTile.RemoveListener(SpawnSelected);
+            if (selectedPlaceable == Placeable.Empty && value != Placeable.Empty) tileClickHandler.OnClickEmptyTile.AddListener(SpawnSelected);
+            selectedPlaceable = value;
         }
     }
-
     private void SpawnSelected(TileData tileData)
     {
         if (tileData.Placeable != Placeable.Empty) return;
         
         Vector3 spawnPosition = tileData.TileObject.transform.position;
-        spawnPosition.y = selectedObject.transform.position.y;
+        spawnPosition.y = placeableParser.Parse(selectedPlaceable).transform.position.y;
         tileData.Placeable = Placeable.MainTower;
         
-        Instantiate(selectedObject, spawnPosition, quaternion.identity);
+        Instantiate(placeableParser.Parse(selectedPlaceable), spawnPosition, quaternion.identity);
     }
 }
