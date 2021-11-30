@@ -47,7 +47,9 @@ public class WorldBuilder : MonoBehaviour
 
         GameObject hexTile = GameObject.Instantiate(_worldManager.GrassTiles.GetRandom());
         hexTile.transform.position = new Vector3(spawnLocation.x, 0, spawnLocation.y);
-        _worldManager.Hexagons.Add(spawnLocation, hexTile);
+
+        TileData tileData = new TileData {TileObject = hexTile};
+        _worldManager.Hexagons.Add(spawnLocation, tileData);
 
         StartCoroutine(TilePopupAnimation(hexTile));
         return hexTile;

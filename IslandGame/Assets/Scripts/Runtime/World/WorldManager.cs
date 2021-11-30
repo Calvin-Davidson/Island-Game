@@ -12,7 +12,7 @@ public class WorldManager : MonoBehaviour
     [SerializeField] private TileSetContainer grassTiles;
     [SerializeField] private TileSetContainer sandTiles;
 
-    private Dictionary<Vector2, GameObject> _hexagons = new Dictionary<Vector2, GameObject>();
+    private Dictionary<Vector2, TileData> _hexagons = new Dictionary<Vector2, TileData>();
     private WorldBuilder _worldBuilder;
 
     
@@ -26,11 +26,12 @@ public class WorldManager : MonoBehaviour
             Vector2 key = new Vector2(o.transform.position.x, o.transform.position.z);
             if (_hexagons.ContainsKey(key)) continue;
 
-            _hexagons.Add(key, o);
+            TileData tileData = new TileData {TileObject = o};
+            _hexagons.Add(key, tileData);
         }
     }
     
-    public GameObject GetTileFromPosition(Vector2 position)
+    public TileData GetTileFromPosition(Vector2 position)
     {
         return _hexagons.OrderBy(pair => Vector2.Distance(pair.Key, position)).FirstOrDefault().Value;
     }
@@ -39,7 +40,6 @@ public class WorldManager : MonoBehaviour
         return !_hexagons.ContainsKey(position);
     }
     
-
     public bool ExpandIsland()
     {
         Vector2[] keys = _hexagons.Keys.ToArray();
@@ -93,7 +93,7 @@ public class WorldManager : MonoBehaviour
         }
     }
 
-    public GameObject GetClosestTileFromPosition(Vector2 vector2)
+    public TileData GetClosestTileFromPosition(Vector2 vector2)
     {
         return _hexagons.OrderBy(pair => Vector2.Distance(pair.Key, vector2)).FirstOrDefault().Value;
     }
@@ -111,5 +111,5 @@ public class WorldManager : MonoBehaviour
 
     public TileSetContainer SandTiles => sandTiles;
 
-    public Dictionary<Vector2, GameObject> Hexagons => _hexagons;
+    public Dictionary<Vector2, TileData> Hexagons => _hexagons;
 }

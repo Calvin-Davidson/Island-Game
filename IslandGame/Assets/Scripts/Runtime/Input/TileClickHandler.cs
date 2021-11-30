@@ -7,9 +7,11 @@ using UnityEngine.Events;
 public class TileClickHandler : MonoBehaviour
 {
     [SerializeField] private InputBrain inputBrain;
-    [SerializeField] private UnityEvent<GameObject> onTileClick;
+    [SerializeField] private UnityEvent<TileData> onClickEmptyTile;
+    [SerializeField] private UnityEvent<TileData> onClickFilledTile;
 
-    public UnityEvent<GameObject> ONTileClick => onTileClick;
+    public UnityEvent<TileData> OnClickEmptyTile => onClickEmptyTile;
+    public UnityEvent<TileData> OnClickFilledTile => onClickFilledTile;
 
     private void Start()
     {
@@ -26,10 +28,10 @@ public class TileClickHandler : MonoBehaviour
 
                 worldPosition = hit.point;
 
-                GameObject obj = WorldManager.Instance.GetClosestTileFromPosition(new Vector2(worldPosition.x, worldPosition.z));
-                onTileClick?.Invoke(obj);
+                TileData obj = WorldManager.Instance.GetClosestTileFromPosition(new Vector2(worldPosition.x, worldPosition.z));
 
-                WorldManager.Instance.ExpandIsland(50);
+                if (obj.Placeable == Placeable.Empty) OnClickEmptyTile?.Invoke(obj);
+                else OnClickFilledTile?.Invoke(obj);
             }
         };
     }
