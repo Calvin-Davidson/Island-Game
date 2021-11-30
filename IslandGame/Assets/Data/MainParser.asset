@@ -12,3 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f651437c8bfac3d428b92a707f95098a, type: 3}
   m_Name: MainParser
   m_EditorClassIdentifier: 
+  _placeableContainers:
+  - SpawningObject: {fileID: 0}
+    Placeable: 0
+  - SpawningObject: {fileID: 4010955666547477934, guid: e58241d6d063a6d4d96d5cf900474faa, type: 3}
+    Placeable: 1
+  - SpawningObject: {fileID: 0}
+    Placeable: 2
+  - SpawningObject: {fileID: 0}
+    Placeable: 3
+  - SpawningObject: {fileID: 0}
+    Placeable: 4
+  - SpawningObject: {fileID: 0}
+    Placeable: 5
+  - SpawningObject: {fileID: 0}
+    Placeable: 6
+  - SpawningObject: {fileID: 0}
+    Placeable: 7
+  - SpawningObject: {fileID: 0}
+    Placeable: 8
+  - SpawningObject: {fileID: 0}
+    Placeable: 9
+  - SpawningObject: {fileID: 0}
+    Placeable: 10
+  - SpawningObject: {fileID: 0}
+    Placeable: 11
