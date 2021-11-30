@@ -10,7 +10,7 @@ public class PlaceableParser : ScriptableObject
     public class PlaceableContainer
     {
         public GameObject SpawningObject;
-        public Placeable Placeable;
+        public Placeable Placeable = Placeable.Empty;
     }
 
     [SerializeField] private List<PlaceableContainer> _placeableContainers = new List<PlaceableContainer>();
@@ -18,12 +18,13 @@ public class PlaceableParser : ScriptableObject
 
     public GameObject Parse(Placeable placeable)
     {
-        return _placeableContainers.FirstOrDefault(container => container.Placeable == placeable).SpawningObject;
+        return _placeableContainers.FirstOrDefault(container => container.Placeable == placeable)?.SpawningObject;
     }
 
     public Placeable Parse(GameObject placeableObject)
     {
-        return _placeableContainers.FirstOrDefault(container => container.SpawningObject == placeableObject).Placeable;
+        var result = _placeableContainers.FirstOrDefault(container => container.SpawningObject == placeableObject);
+        return result?.Placeable ?? Placeable.Empty;
     }
     
 }
