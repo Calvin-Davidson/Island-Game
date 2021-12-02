@@ -28,7 +28,8 @@ public class TileClickHandler : MonoBehaviour
 
                 worldPosition = hit.point;
 
-                TileData obj = WorldManager.Instance.GetClosestTileFromPosition(new Vector2(worldPosition.x, worldPosition.z));
+                TileData obj =
+                    WorldManager.Instance.GetClosestTileFromPosition(new Vector2(worldPosition.x, worldPosition.z));
 
                 if (obj.Placeable == Placeable.Empty) OnClickEmptyTile?.Invoke(obj);
                 else OnClickFilledTile?.Invoke(obj);

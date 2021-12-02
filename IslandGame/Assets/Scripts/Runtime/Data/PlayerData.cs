@@ -8,17 +8,17 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Data", menuName = "Data/PlayerData", order = 1)]
 public class PlayerData : ScriptableObject
 {
-    private int _score;
+    private int _energy;
 
     public event Action<int> OnScoreUpdate;
 
-    public int Score
+    public int Energy
     {
-        get => _score;
+        get => _energy;
         set
         {
-            _score = value;
-            OnScoreUpdate?.Invoke(_score);
+            _energy = value;
+            OnScoreUpdate?.Invoke(_energy);
         }
     }
 }
